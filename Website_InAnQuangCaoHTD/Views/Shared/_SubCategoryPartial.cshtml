@@ -1,0 +1,45 @@
+﻿@model List<Website_InAnQuangCaoHTD.Models.SubCategory>
+<style>
+    .card {
+        border: 1px solid #ddd;
+        transition: transform 0.3s ease-in-out;
+    }
+
+        .card:hover {
+            transform: scale(1.1);
+            border-color: green;
+            box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+        }
+    .card-title {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+</style>
+<div class="container mt-4">
+    <div class="d-flex justify-content-between p-3">
+        <h3><i style="padding-right: 10px;" class="fa-solid fa-layer-group"></i>DANH MỤC</h3>
+        <a class="btn btn-danger" href="#">Tất cả</a>
+    </div>
+    <div class="row">
+        @for (int i = 0; i < Model.Count && i < 12; i++)
+        {
+            <div class="col-md-2 mb-4">
+                <div class="card pointer h-100 shadow-sm" style="border-radius: 10px; overflow: hidden;">
+                    <a href="@Url.Action("GetAllSubCategory","Product", new { id = Model[i].SubCategoryID })">
+                        <img src="~/img/@Model[i].SubCategoryImage" class="card-img-top" alt="Ảnh danh mục" width="120" height="120" style="object-fit: cover; border-bottom: 2px solid #f0f0f0;">
+                    </a>
+                    <div class="card-body text-center">
+                        <h6 class="card-title mb-0">@Model[i].SubCategoryName</h6>                     
+                    </div>
+                </div>
+            </div>
+
+            @if ((i + 1) % 6 == 0 && i != Model.Count - 1)
+            {
+                <div class="row"> </div>
+            }
+            
+        }
+    </div>
+</div>

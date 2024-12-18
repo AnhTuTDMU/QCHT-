@@ -1,0 +1,186 @@
+﻿@model ShoppingCartViewModel
+
+<section class="h-100 h-custom">
+    <div class="container h-100 py-5">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col">
+
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="h5">Tên Sản Phẩm</th>
+                                <th scope="col">Số Lượng</th>
+                                <th scope="col">Giá</th>
+                                <th scope="col">Tổng</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model.Items.Any())
+                            {
+                                @foreach (var item in Model.Items)
+                                {
+                                    <tr>
+                                        <th scope="row">
+                                        
+                                            <div class="d-flex align-items-center">
+                                                <img src="~/img/@item.Product.ImageFileName" class="img-fluid rounded-3" style="width: 120px;" alt="@item.Product.ProductName">
+                                                <div class="flex-column ms-4">
+                                                    <p class="mb-2">@item.Product.ProductName</p>
+                                                    <p class="mb-0">@item.Product.Description</p>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <td class="align-middle">
+                                            <input type="hidden" id="productIdInput_@item.ProductId" name="productId" value="@item.ProductId" />
+                                            <input type="hidden" id="priceInput_@item.ProductId" name="price" value="@item.Price" />
+                                            <div class="d-flex flex-row">
+                                                <button type="button" class="btn btn-link px-2" onclick="changeQuantity(-1, @item.ProductId)">
+                                                    <i class="fas fa-minus"></i>
+                                                </button>
+                                                <input id="quantityInput_@item.ProductId" name="quantity" value="@item.Quantity" type="number" class="form-control form-control-sm" style="width: 50px;" />
+                                                <button type="button" class="btn btn-link px-2" onclick="changeQuantity(1, @item.ProductId)">
+                                                    <i class="fas fa-plus"></i>
+                                                </button>
+                                            </div>
+
+
+
+                                        </td>
+                                        <td class="align-middle">
+                                            <p class="mb-0" style="font-weight: 500;">@item.Price.ToString("N0", new System.Globalization.CultureInfo("vi-VN")) VNĐ</p>
+                                        </td>
+                                    <td class="align-middle">
+                                        <p class="mb-0" style="font-weight: 500;">
+                                            @Html.Raw((item.Price * item.Quantity).ToString("N0", new System.Globalization.CultureInfo("vi-VN")) + " VNĐ")
+                                        </p>
+                                    </td>
+                                        <td>
+                                            <button class="btn btn-danger btn-sm" onclick="removeFromCart(@item.ProductId)">Xóa</button>
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                            else
+                            {
+                                <tr>
+                                    <td colspan="5" class="text-center">Giỏ hàng của bạn hiện đang trống.</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+
+                @if (Model.Items.Any())
+                {
+                    <div class="card shadow-2-strong mb-5 mb-lg-0" style="border-radius: 16px;">
+                        <div class="card-body p-4">
+
+                            <div class="row">
+@*                                 <div class="col-md-6 col-lg-4 col-xl-3 mb-4 mb-md-0">
+                                    <form>
+                                        <div class="d-flex flex-row pb-3">
+                                            <div class="d-flex align-items-center pe-2">
+                                                <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1v" value="" aria-label="..." checked />
+                                            </div>
+                                            <div class="rounded border w-100 p-3">
+                                                <p class="d-flex align-items-center mb-0">
+                                                    <i class="fab fa-cc-mastercard fa-2x text-body pe-2"></i> Credit Card
+                                                </p>
+                                            </div>
+                                        </div>                                      
+                                    </form>
+                                </div>
+                                <div class="col-md-6 col-lg-4 col-xl-6">
+                                    <div class="row">
+                                        <div class="col-12 col-xl-6">
+                                            <div data-mdb-input-init class="form-outline mb-4 mb-xl-5">
+                                                <input type="text" id="typeName" class="form-control form-control-lg" size="17" placeholder="John Smith" />
+                                                <label class="form-label" for="typeName">Nhập card</label>
+                                            </div>
+                                            <div data-mdb-input-init class="form-outline mb-4 mb-xl-5">
+                                                <input type="text" id="typeExp" class="form-control form-control-lg" placeholder="MM/YY" size="7" minlength="7" maxlength="7" />
+                                                <label class="form-label" for="typeExp">Expiration</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-xl-6">
+                                            <div data-mdb-input-init class="form-outline mb-4 mb-xl-5">
+                                                <input type="text" id="typeText" class="form-control form-control-lg" size="17" placeholder="1111 2222 3333 4444" minlength="19" maxlength="19" />
+                                                <label class="form-label" for="typeText">Số</label>
+                                            </div>
+                                            <div data-mdb-input-init class="form-outline mb-4 mb-xl-5">
+                                                <input type="password" id="typeText" class="form-control form-control-lg" placeholder="&#9679;&#9679;&#9679;" size="1" minlength="3" maxlength="3" />
+                                                <label class="form-label" for="typeText">Cvv</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> *@
+                                <div class="col-lg-4 col-xl-3">
+                                    <div class="d-flex justify-content-between" style="font-weight: 500;">
+                                        <p class="mb-2">Tổng tiền tất cả</p>
+                                        <p class="mb-2">@Model.TotalAmount.ToString("N0", new System.Globalization.CultureInfo("vi-VN")) VNĐ</p>
+                                    </div>
+                                    <hr class="my-4">
+                                    <a type="button" class="btn btn-primary" id="checkoutBtn" href="@Url.Action("Index","Checkout")">Hoàn tất thanh toán</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+        function removeFromCart(productId) {
+            if (confirm("Bạn có chắc chắn muốn xóa sản phẩm này khỏi giỏ hàng không?")) {
+                $.ajax({
+                    url: '@Url.Action("RemoveFromCart", "ShoppingCart")',
+                    type: 'POST',
+                    data: { productId: productId },
+                    success: function (response) {
+                        if (response.success) {
+                            location.reload();
+                        } else {
+                            alert(response.message);
+                        }
+                    },
+                    error: function () {
+                        alert("Đã xảy ra lỗi trong quá trình xóa sản phẩm khỏi giỏ hàng.");
+                    }
+                });
+            }
+        }
+        function changeQuantity(change, productId) {
+            var quantityInput = $("#quantityInput_" + productId);
+            var newQuantity = parseInt(quantityInput.val()) + change;
+            var price = $("#priceInput_" + productId).val();
+
+            if (newQuantity > 0) { // Đảm bảo số lượng không âm
+                $.ajax({
+                    url: '@Url.Action("UpdateQuantity", "ShoppingCart")', 
+                    type: 'POST',
+                    data: {
+                        productId: productId,
+                        quantity: newQuantity,
+                        price: price
+                    },
+                    success: function (response) {
+                        if (response.success) {
+                            quantityInput.val(newQuantity); // Cập nhật số lượng mới
+                        } else {
+                            alert(response.message);
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        alert("Có lỗi xảy ra: " + error);
+                    }
+                });
+            }
+        }
+
+
+    </script>
+}

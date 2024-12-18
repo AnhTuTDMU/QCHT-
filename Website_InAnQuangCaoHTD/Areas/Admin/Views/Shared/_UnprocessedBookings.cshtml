@@ -1,0 +1,55 @@
+﻿@model IEnumerable<dynamic>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Ngày đặt lịch</th>
+            <th>Mô tả</th>
+            <th>Địa chỉ</th>
+            <th>Tên người dùng</th>
+            <th>Email</th>
+            <th>Số điện thoại</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var booking in Model)
+        {
+            <tr>
+                <td>@booking.BookingDate.ToString("dd/MM/yyyy")</td>
+                <td>@booking.Description</td>
+                <td>@booking.Address</td>
+                <td>@booking.UserName</td>
+                <td>@booking.Email</td>
+                <td>@booking.PhoneNumber</td>
+                <td>
+                    <button class="btn btn-success btn-sm" onclick="confirmBooking(@booking.ConstructionBookingId)">
+                        Xác nhận
+                    </button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<script>
+    function confirmBooking(id) {
+        if (confirm("Bạn có chắc muốn xác nhận đặt lịch này không?")) {
+            $.ajax({
+                url: 'Admin/ConstructionBooking/ConfirmBooking',
+                type: 'POST',
+                data: { id: id },
+                success: function (response) {
+                    if (response.success) {
+                        alert(response.message);
+                        loadUnprocessedBookings(); // Tải lại danh sách sau khi xác nhận
+                    } else {
+                        alert(response.message);
+                    }
+                },
+                error: function () {
+                    alert("Đã xảy ra lỗi khi xác nhận đặt lịch.");
+                }
+            });
+        }
+    }
+</script>

@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Website_InAnQuangCaoHTD.Models.Product>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+@if (!Model.Any())
+{
+        <img src="~/img/404.png" alt="Không tìm thấy kết quả" class="img-fluid" />
+}
+else
+{
+    <h2>Kết quả tìm kiếm</h2>
+    <div class="row">
+        @foreach (var product in Model)
+        {
+            <div class="col-md-4" style="margin-top: 7px;">
+                <div class="card h-100">
+                    <a href="@Url.Action("Details","Product", new { id = product.ProductID })">
+                        <img src="~/img/@product.ImageFileName" class="card-img-top" alt="@product.ProductName" />
+                    </a>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">@product.ProductName</h5>
+                        <p class="card-text">@product.Description</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="@Url.Action("Details", "Product", new { id = product.ProductID })" class="btn btn-primary btn-sm">Xem Chi Tiết</a>
+                        <a href="@Url.Action("Details", "Product", new { id = product.ProductID })" class="btn btn-success btn-sm">Đặt hàng</a>
+                        <h6 class="text-success">Chỉ từ @string.Format(new System.Globalization.CultureInfo("vi-VN"), "{0:N0}", product.Price) VNĐ</h6>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+}

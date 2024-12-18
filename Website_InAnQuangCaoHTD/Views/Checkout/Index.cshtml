@@ -1,0 +1,177 @@
+﻿@using System.Globalization
+@model Website_InAnQuangCaoHTD.Models.CheckoutViewModel
+<style>
+    h2 {
+        color: #007bff;
+        font-weight: bold;
+    }
+
+    label {
+        font-weight: 600;
+    }
+
+    input, select {
+        margin-bottom: 15px;
+    }
+
+    button {
+        transition: background-color 0.3s ease;
+    }
+
+        button:hover {
+            background-color: #28a745;
+        }
+
+    .table {
+        margin-top: 20px;
+    }
+
+    #addressSuggestions {
+        position: absolute;
+        background-color: white;
+        border: 1px solid #ddd;
+        max-height: 200px;
+        overflow-y: auto;
+        z-index: 1000;
+        width: 40%;
+        padding: 0;
+        margin: 0;
+        top: 330px;
+        left: 130px;
+    }
+
+        #addressSuggestions .dropdown-item {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+            #addressSuggestions .dropdown-item:hover {
+                background-color: #f8f9fa;
+            }
+
+</style>
+<h2 class="text-center mb-4">Thông Tin Thanh Toán</h2>
+
+<form asp-action="Checkout" method="post" style="background: #fcfcfc;padding: 16px;border: 1px solid;box-shadow: 1px 1px 1px 1px #888888; border-radius: 10px">
+    <input type="hidden" asp-for="UserId" class="form-control" />
+
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <label for="Address">Địa chỉ giao hàng</label>
+            <input id="Address" name="Address" class="form-control" placeholder="Nhập địa chỉ giao hàng" autocomplete="off" />
+            <ul id="addressSuggestions" class="dropdown-menu"></ul>
+            <span asp-validation-for="Address" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-6">
+            <label for="PaymentMethod" class="form-label">Phương thức thanh toán:</label>
+            <select asp-for="PaymentMethod" class="form-select">
+                <option value="">Chọn phương thức</option>
+                <option value="VNPAY">Thanh Toán VNPAY</option>
+                <option value="Thanh Toán sau khi nhận hàng">Thanh toán khi nhận hàng</option>
+            </select>
+            <span asp-validation-for="PaymentMethod" class="text-danger"></span>
+        </div>
+    </div>
+
+    <h3 class="mb-4">Các sản phẩm bạn mua</h3>
+    @if (Model.ShoppingCart != null && Model.ShoppingCart.Items != null && Model.ShoppingCart.Items.Any())
+    {
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Hình ảnh</th>
+                        <th>Sản phẩm</th>
+                        <th>Số lượng</th>
+                        <th>Giá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.ShoppingCart.Items)
+                    {
+                        <tr>
+                            @if (item.Product != null)
+                            {
+                                <td>
+                                    <img src="/img/@item.Product.ImageFileName" width="70px" height="70px"/>                                  
+                                 </td>
+                                <td>@item.Product.ProductName</td>
+                                <td>@item.Quantity</td>
+                                <td>@item.Price.ToString("N0", new CultureInfo("vi-VN")) VNĐ</td>
+                            }
+                            else
+                            {
+                                <td colspan="3">Sản phẩm không có thông tin.</td>
+                            }
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    else
+    {
+        <p class="text-muted">Giỏ hàng trống.</p>
+    }
+
+    <div class="mt-4">
+        <h4>Tổng số tiền: <span class="text-primary">@Model.TotalAmount.ToString("N0", new CultureInfo("vi-VN")) VNĐ</span></h4>
+    </div>
+
+    <div class="d-grid gap-2 mt-4">
+        <button type="submit" class="btn btn-success btn-lg">Đặt hàng</button>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        const apiKey = "KBhR7eVjATLppcuX87P8pXhF51G9aw6xMptlgSlE";
+        const baseUrl = "https://rsapi.goong.io/Place/AutoComplete";
+
+        // Hàm xử lý gợi ý địa chỉ
+        function fetchAddressSuggestions(inputValue) {
+            if (!inputValue.trim()) {
+                $("#addressSuggestions").hide(); // Ẩn danh sách nếu không có giá trị
+                return;
+            }
+
+            const location = "21.013715429594125,105.79829597455202"; // Toạ độ mặc định
+            const url = `${baseUrl}?api_key=${apiKey}&location=${location}&input=${encodeURIComponent(inputValue)}`;
+
+            // Gửi yêu cầu tới API
+            fetch(url)
+                .then((response) => response.json())
+                .then((data) => {
+                    if (data.predictions && data.predictions.length > 0) {
+                        let suggestions = "";
+                        data.predictions.forEach((item) => {
+                            suggestions += `
+                        <li class="dropdown-item" onclick="selectAddress('${item.description}')">${item.description}</li>`;
+                        });
+                        $("#addressSuggestions").html(suggestions).show();
+                    } else {
+                        $("#addressSuggestions").hide(); // Ẩn danh sách nếu không có kết quả
+                    }
+                })
+                .catch((error) => {
+                    console.error("Lỗi khi gọi API Goong:", error);
+                    $("#addressSuggestions").hide();
+                });
+        }
+
+        // Gắn sự kiện nhập vào ô input
+        $("#Address").on("input", function () {
+            const inputValue = $(this).val();
+            fetchAddressSuggestions(inputValue);
+        });
+
+        // Hàm chọn địa chỉ từ danh sách gợi ý
+        function selectAddress(address) {
+            $("#Address").val(address); // Đặt giá trị cho ô input
+            $("#addressSuggestions").hide(); // Ẩn danh sách gợi ý
+        }
+
+    </script>
+}

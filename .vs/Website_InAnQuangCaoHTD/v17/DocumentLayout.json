@@ -1,0 +1,1792 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\controllers\\orderhistorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\controllers\\orderhistorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\controllers\\useraccountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\controllers\\useraccountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\controllers\\constructionbookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\controllers\\constructionbookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\controllers\\flashsaleupdateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\controllers\\flashsaleupdateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\helpers\\vnpaylibary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\helpers\\vnpaylibary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\helpers\\ivnpayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\helpers\\ivnpayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\models\\flashsale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\models\\flashsale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\views\\shared\\_popularproductspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\views\\shared\\_popularproductspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\views\\shared\\_flashsalepartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\views\\shared\\_flashsalepartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\views\\shared\\_orderdetailspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\views\\shared\\_orderdetailspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\views\\shared\\navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\views\\shared\\navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\areas\\admin\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\areas\\admin\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\areas\\admin\\controllers\\manageorderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\areas\\admin\\controllers\\manageorderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\areas\\admin\\controllers\\constructionbookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\areas\\admin\\controllers\\constructionbookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\areas\\admin\\views\\shared\\_dashboardpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\areas\\admin\\views\\shared\\_dashboardpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\areas\\admin\\views\\shared\\_productpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\areas\\admin\\views\\shared\\_productpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\areas\\admin\\views\\shared\\_processedbookings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\areas\\admin\\views\\shared\\_processedbookings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\areas\\admin\\views\\shared\\_orderslistallpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\areas\\admin\\views\\shared\\_orderslistallpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\areas\\admin\\views\\shared\\_orderdetailspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\areas\\admin\\views\\shared\\_orderdetailspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\areas\\admin\\views\\shared\\_sliderspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\areas\\admin\\views\\shared\\_sliderspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\areas\\admin\\views\\shared\\_orderslistpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\areas\\admin\\views\\shared\\_orderslistpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\areas\\admin\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\areas\\admin\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\areas\\admin\\views\\shared\\_unprocessedbookings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\areas\\admin\\views\\shared\\_unprocessedbookings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\areas\\admin\\views\\shared\\_customerlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\areas\\admin\\views\\shared\\_customerlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\views\\shoppingcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\views\\shoppingcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\views\\orderhistory\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\views\\orderhistory\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\views\\checkout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\views\\checkout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\areas\\admin\\views\\shared\\_categoriespartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\areas\\admin\\views\\shared\\_categoriespartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\areas\\admin\\views\\shared\\_subcategoriespartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\areas\\admin\\views\\shared\\_subcategoriespartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\views\\checkout\\success.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\views\\checkout\\success.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\areas\\admin\\views\\shared\\_bestsellingpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\areas\\admin\\views\\shared\\_bestsellingpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\areas\\admin\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\areas\\admin\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\areas\\admin\\controllers\\subcategorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\areas\\admin\\controllers\\subcategorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\wwwroot\\css\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\wwwroot\\css\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\views\\shared\\_sliderpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\views\\shared\\_sliderpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\views\\shared\\_subcategorypartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\views\\shared\\_subcategorypartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\areas\\admin\\controllers\\statisticalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\areas\\admin\\controllers\\statisticalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\migrations\\20241205071424_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\migrations\\20241205071424_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\migrations\\20241104071820_adddatecreatedtousersmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\migrations\\20241104071820_adddatecreatedtousersmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\models\\usersmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\models\\usersmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\models\\slider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\models\\slider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\models\\constructionbooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\models\\constructionbooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Migrations\\20241205070512_AddConstructionBooking_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Website_InAnQuangCaoHTD\\Migrations\\20241205070512_AddConstructionBooking_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\views\\useraccount\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\views\\useraccount\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Migrations\\20241205060310_AddConstructionBooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Website_InAnQuangCaoHTD\\Migrations\\20241205060310_AddConstructionBooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\models\\emailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\models\\emailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\models\\subcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\models\\subcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\areas\\admin\\controllers\\sliderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\areas\\admin\\controllers\\sliderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\controllers\\shoppingcartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\controllers\\shoppingcartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\helpers\\recaptchasettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\helpers\\recaptchasettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\helpers\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\helpers\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\helpers\\sessionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\helpers\\sessionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\helpers\\vnpayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\helpers\\vnpayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\areas\\admin\\controllers\\adminaccountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\areas\\admin\\controllers\\adminaccountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\areas\\admin\\views\\adminaccount\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\areas\\admin\\views\\adminaccount\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\views\\product\\getallsubcategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\views\\product\\getallsubcategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\views\\product\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\views\\product\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\migrations\\20241101073518_addsoldquantitytoproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\migrations\\20241101073518_addsoldquantitytoproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\views\\useraccount\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\views\\useraccount\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\views\\useraccount\\resetpasswordconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\views\\useraccount\\resetpasswordconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\views\\useraccount\\verifyresetcode.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\views\\useraccount\\verifyresetcode.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\views\\useraccount\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\views\\useraccount\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\views\\useraccount\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\views\\useraccount\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\models\\resetpasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\models\\resetpasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\models\\forgotpasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\models\\forgotpasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\models\\vnpaymentresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\models\\vnpaymentresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\models\\checkoutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\models\\checkoutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\models\\shoppingcartviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\models\\shoppingcartviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\views\\user\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\views\\user\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\models\\rolesmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\models\\rolesmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Migrations\\20240905065622_AddInvoiceDetailsUpdate3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Website_InAnQuangCaoHTD\\Migrations\\20240905065622_AddInvoiceDetailsUpdate3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Migrations\\20240905065444_AddInvoiceDetailsUpdate2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Website_InAnQuangCaoHTD\\Migrations\\20240905065444_AddInvoiceDetailsUpdate2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Migrations\\20240905064940_AddInvoiceDetailsUpdate1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Website_InAnQuangCaoHTD\\Migrations\\20240905064940_AddInvoiceDetailsUpdate1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\wwwroot\\js\\setting-demo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\wwwroot\\js\\setting-demo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\wwwroot\\js\\kaiadmin.min.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\wwwroot\\js\\kaiadmin.min.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\wwwroot\\js\\kaiadmin.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\wwwroot\\js\\kaiadmin.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\wwwroot\\js\\demo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\wwwroot\\js\\demo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\wwwroot\\js\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\wwwroot\\js\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\wwwroot\\js\\categoryadmin.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\wwwroot\\js\\categoryadmin.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\wwwroot\\js\\admin.js||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\wwwroot\\js\\admin.js||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|c:\\users\\asus\\source\\repos\\website_inanquangcaohtd\\website_inanquangcaohtd\\migrations\\20240919070030_updateordermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59302A03-B1A2-442F-A029-EE7BFC6D0B3E}|Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD.csproj|solutionrelative:website_inanquangcaohtd\\migrations\\20240919070030_updateordermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ManageOrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\ManageOrdersController.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\ManageOrdersController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\ManageOrdersController.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\ManageOrdersController.cs",
+              "ViewState": "AQIAAKEAAAAAAAAAAAAUwLEAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T13:06:01.932Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FlashSaleUpdateService.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Controllers\\FlashSaleUpdateService.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Controllers\\FlashSaleUpdateService.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Controllers\\FlashSaleUpdateService.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Controllers\\FlashSaleUpdateService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T08:06:54.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwA8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T05:03:27.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAPsAAAAAAAAAAAAAABMBAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-06T04:52:27.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-05T06:52:33.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\appsettings.json",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\appsettings.json",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\appsettings.json",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\appsettings.json",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-01T06:51:55.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderHistoryController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Controllers\\OrderHistoryController.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Controllers\\OrderHistoryController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Controllers\\OrderHistoryController.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Controllers\\OrderHistoryController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T04:36:55.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserAccountController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Controllers\\UserAccountController.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Controllers\\UserAccountController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Controllers\\UserAccountController.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Controllers\\UserAccountController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAANQAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T04:04:05.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ConstructionBookingController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Controllers\\ConstructionBookingController.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Controllers\\ConstructionBookingController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Controllers\\ConstructionBookingController.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Controllers\\ConstructionBookingController.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAowCAAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T06:29:07.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T07:25:10.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAIA8wKAAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T03:11:40.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CheckoutController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Controllers\\CheckoutController.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Controllers\\CheckoutController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Controllers\\CheckoutController.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Controllers\\CheckoutController.cs",
+              "ViewState": "AQIAAJYAAAAAAAAAAAAowKsAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T13:17:25.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "VnpayLibary.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Helpers\\VnpayLibary.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Helpers\\VnpayLibary.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Helpers\\VnpayLibary.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Helpers\\VnpayLibary.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAYwHUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T05:06:51.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IVnPayService.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Helpers\\IVnPayService.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Helpers\\IVnPayService.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Helpers\\IVnPayService.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Helpers\\IVnPayService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T07:43:51.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FlashSale.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Models\\FlashSale.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Models\\FlashSale.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Models\\FlashSale.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Models\\FlashSale.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAArwA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T05:02:56.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-05T06:56:31.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_FlashSalePartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\Shared\\_FlashSalePartial.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Views\\Shared\\_FlashSalePartial.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\Shared\\_FlashSalePartial.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Views\\Shared\\_FlashSalePartial.cshtml",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAEEAAABrAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-14T08:44:17.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_PopularProductsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\Shared\\_PopularProductsPartial.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Views\\Shared\\_PopularProductsPartial.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\Shared\\_PopularProductsPartial.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Views\\Shared\\_PopularProductsPartial.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAC4AAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-22T05:41:24.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_OrderDetailsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\Shared\\_OrderDetailsPartial.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Views\\Shared\\_OrderDetailsPartial.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\Shared\\_OrderDetailsPartial.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Views\\Shared\\_OrderDetailsPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-10T05:08:49.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Navbar.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\Shared\\Navbar.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Views\\Shared\\Navbar.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\Shared\\Navbar.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Views\\Shared\\Navbar.cshtml",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAAFEAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-05T06:44:48.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "_LayoutAdmin.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ViewState": "AQIAACoDAAAAAAAAAAAAADsDAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-05T08:04:55.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAYwDwAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T08:21:10.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAkwD0AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T17:06:10.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ConstructionBookingController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\ConstructionBookingController.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\ConstructionBookingController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\ConstructionBookingController.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\ConstructionBookingController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAowCsAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T08:49:10.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "_DashboardPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_DashboardPartial.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_DashboardPartial.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_DashboardPartial.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_DashboardPartial.cshtml",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAEwAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-04T05:57:37.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "_ProductPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_ProductPartial.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_ProductPartial.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_ProductPartial.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_ProductPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEkAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-07T17:38:45.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-20T08:36:57.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "_ProcessedBookings.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_ProcessedBookings.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_ProcessedBookings.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_ProcessedBookings.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_ProcessedBookings.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-05T09:12:16.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "_OrdersListAllPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_OrdersListAllPartial.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_OrdersListAllPartial.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_OrdersListAllPartial.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_OrdersListAllPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-09T14:02:48.39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "_OrderDetailsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_OrderDetailsPartial.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_OrderDetailsPartial.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_OrderDetailsPartial.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_OrderDetailsPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-01T07:40:14.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "_SlidersPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_SlidersPartial.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_SlidersPartial.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_SlidersPartial.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_SlidersPartial.cshtml",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAAAF0AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T10:15:50.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "_OrdersListPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_OrdersListPartial.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_OrdersListPartial.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_OrdersListPartial.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_OrdersListPartial.cshtml",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAowCIAAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T05:38:33.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-05T08:37:32.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "_UnprocessedBookings.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_UnprocessedBookings.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_UnprocessedBookings.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_UnprocessedBookings.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_UnprocessedBookings.cshtml",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAowCcAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-05T08:57:22.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "_CustomerList.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_CustomerList.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_CustomerList.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_CustomerList.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_CustomerList.cshtml",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAEQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-27T07:28:09.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\ShoppingCart\\Index.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Views\\ShoppingCart\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\ShoppingCart\\Index.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Views\\ShoppingCart\\Index.cshtml",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAcwHoAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-19T05:42:16.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\OrderHistory\\Index.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Views\\OrderHistory\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\OrderHistory\\Index.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Views\\OrderHistory\\Index.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAowDcAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-20T09:08:51.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\Checkout\\Index.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Views\\Checkout\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\Checkout\\Index.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Views\\Checkout\\Index.cshtml",
+              "ViewState": "AQIAAIwAAAAAAAAAAAAowJYAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-05T13:33:19.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "_SubCategoriesPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_SubCategoriesPartial.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_SubCategoriesPartial.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_SubCategoriesPartial.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_SubCategoriesPartial.cshtml",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAAJ8AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-05T11:12:54.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "_CategoriesPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_CategoriesPartial.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_CategoriesPartial.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_CategoriesPartial.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_CategoriesPartial.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABsAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-05T09:58:44.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Success.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\Checkout\\Success.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Views\\Checkout\\Success.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\Checkout\\Success.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Views\\Checkout\\Success.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T10:51:26.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "_BestSellingPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_BestSellingPartial.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_BestSellingPartial.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_BestSellingPartial.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\Shared\\_BestSellingPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-05T03:17:32.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\CustomerController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T07:20:15.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "SubCategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\SubCategoryController.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\SubCategoryController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\SubCategoryController.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\SubCategoryController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABUAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T16:56:45.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "index.css",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\wwwroot\\css\\index.css",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\wwwroot\\css\\index.css",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\wwwroot\\css\\index.css",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\wwwroot\\css\\index.css",
+              "ViewState": "AQIAANEAAAAAAAAAAAAwwPIAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-07T16:18:40.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "_SubCategoryPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\Shared\\_SubCategoryPartial.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Views\\Shared\\_SubCategoryPartial.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\Shared\\_SubCategoryPartial.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Views\\Shared\\_SubCategoryPartial.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABgAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-14T08:41:38.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "_sliderPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\Shared\\_sliderPartial.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Views\\Shared\\_sliderPartial.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\Shared\\_sliderPartial.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Views\\Shared\\_sliderPartial.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-04T08:06:45.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\Product\\Details.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Views\\Product\\Details.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\Product\\Details.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Views\\Product\\Details.cshtml",
+              "ViewState": "AQIAAHIAAAAAAAAAAAAAAIkAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-16T04:48:11.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "StatisticalController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\StatisticalController.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\StatisticalController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\StatisticalController.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\StatisticalController.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAYwEUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T03:02:49.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T09:51:45.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "20241104071820_AddDateCreatedToUsersModel.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Migrations\\20241104071820_AddDateCreatedToUsersModel.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Migrations\\20241104071820_AddDateCreatedToUsersModel.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Migrations\\20241104071820_AddDateCreatedToUsersModel.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Migrations\\20241104071820_AddDateCreatedToUsersModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T07:18:20.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "Slider.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Models\\Slider.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Models\\Slider.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Models\\Slider.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Models\\Slider.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAQwBEAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T07:36:46.065Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Models\\Category.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Models\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T05:10:50.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "20241205071424_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Migrations\\20241205071424_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Migrations\\20241205071424_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Migrations\\20241205071424_InitialCreate.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Migrations\\20241205071424_InitialCreate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T07:14:42.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "ConstructionBooking.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Models\\ConstructionBooking.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Models\\ConstructionBooking.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Models\\ConstructionBooking.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Models\\ConstructionBooking.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T05:54:49.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "UsersModel.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Models\\UsersModel.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Models\\UsersModel.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Models\\UsersModel.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Models\\UsersModel.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAYwCQAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T11:56:43.42Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "20241205070512_AddConstructionBooking_2.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Migrations\\20241205070512_AddConstructionBooking_2.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Migrations\\20241205070512_AddConstructionBooking_2.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Migrations\\20241205070512_AddConstructionBooking_2.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Migrations\\20241205070512_AddConstructionBooking_2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T07:05:12.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "BaseController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Controllers\\BaseController.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Controllers\\BaseController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Controllers\\BaseController.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Controllers\\BaseController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFkAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T08:15:00.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAIkAAAAAAAAAAAAswD4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T11:45:12.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Models\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Models\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Models\\LoginViewModel.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Models\\LoginViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T09:28:24.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\UserAccount\\Login.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Views\\UserAccount\\Login.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\UserAccount\\Login.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Views\\UserAccount\\Login.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAEgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-24T06:24:42.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "20241205060310_AddConstructionBooking.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Migrations\\20241205060310_AddConstructionBooking.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Migrations\\20241205060310_AddConstructionBooking.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Migrations\\20241205060310_AddConstructionBooking.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Migrations\\20241205060310_AddConstructionBooking.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAQwD8AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T06:03:10.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "EmailSettings.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Models\\EmailSettings.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Models\\EmailSettings.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Models\\EmailSettings.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Models\\EmailSettings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T05:56:17.025Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Models\\Order.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Models\\Order.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwCAAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T08:01:58.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "SubCategory.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Models\\SubCategory.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Models\\SubCategory.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Models\\SubCategory.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Models\\SubCategory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T05:11:12.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "SlidersController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\SlidersController.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\SlidersController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\SlidersController.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\SlidersController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAzwB0AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T07:45:09.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "ShoppingCartService.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Controllers\\ShoppingCartService.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Controllers\\ShoppingCartService.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Controllers\\ShoppingCartService.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Controllers\\ShoppingCartService.cs",
+              "ViewState": "AQIAAHMAAAAAAAAAAAAqwBYAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T13:36:08.566Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "ShoppingCartController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Controllers\\ShoppingCartController.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Controllers\\ShoppingCartController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Controllers\\ShoppingCartController.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Controllers\\ShoppingCartController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T05:31:07.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "ReCaptchaSettings.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Helpers\\ReCaptchaSettings.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Helpers\\ReCaptchaSettings.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Helpers\\ReCaptchaSettings.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Helpers\\ReCaptchaSettings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T06:44:57.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Helpers\\EmailService.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Helpers\\EmailService.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Helpers\\EmailService.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Helpers\\EmailService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T06:59:44.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "SessionExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Helpers\\SessionExtensions.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Helpers\\SessionExtensions.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Helpers\\SessionExtensions.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Helpers\\SessionExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T05:06:46.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "VnPayService.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Helpers\\VnPayService.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Helpers\\VnPayService.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Helpers\\VnPayService.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Helpers\\VnPayService.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAADwvwwAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T05:23:21.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-05T05:03:38.829Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Views\\Home\\About.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-20T10:31:23.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-05T08:11:21.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-05T08:04:19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-31T04:51:21.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "AdminAccountController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\AdminAccountController.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\AdminAccountController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\AdminAccountController.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Controllers\\AdminAccountController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADsAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T06:20:04.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\AdminAccount\\Login.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\AdminAccount\\Login.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\AdminAccount\\Login.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Areas\\Admin\\Views\\AdminAccount\\Login.cshtml",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAD4AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-24T06:43:09.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "Search.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\Product\\Search.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Views\\Product\\Search.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\Product\\Search.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Views\\Product\\Search.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-01T08:45:12.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "GetAllSubCategory.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\Product\\GetAllSubCategory.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Views\\Product\\GetAllSubCategory.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\Product\\GetAllSubCategory.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Views\\Product\\GetAllSubCategory.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-01T09:44:21.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "20241101073518_AddSoldQuantityToProduct.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Migrations\\20241101073518_AddSoldQuantityToProduct.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Migrations\\20241101073518_AddSoldQuantityToProduct.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Migrations\\20241101073518_AddSoldQuantityToProduct.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Migrations\\20241101073518_AddSoldQuantityToProduct.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T07:35:19.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "ResetPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\UserAccount\\ResetPassword.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Views\\UserAccount\\ResetPassword.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\UserAccount\\ResetPassword.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Views\\UserAccount\\ResetPassword.cshtml",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAgwFkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-01T05:32:26.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "ResetPasswordConfirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\UserAccount\\ResetPasswordConfirmation.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Views\\UserAccount\\ResetPasswordConfirmation.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\UserAccount\\ResetPasswordConfirmation.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Views\\UserAccount\\ResetPasswordConfirmation.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-01T05:53:37.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "ForgotPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\UserAccount\\ForgotPassword.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Views\\UserAccount\\ForgotPassword.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\UserAccount\\ForgotPassword.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Views\\UserAccount\\ForgotPassword.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAFMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-01T05:29:36.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "VerifyResetCode.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\UserAccount\\VerifyResetCode.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Views\\UserAccount\\VerifyResetCode.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\UserAccount\\VerifyResetCode.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Views\\UserAccount\\VerifyResetCode.cshtml",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAgwDMAAABhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-01T04:36:31.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\UserAccount\\Register.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Views\\UserAccount\\Register.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\UserAccount\\Register.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Views\\UserAccount\\Register.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-24T06:41:54.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 87,
+              "Title": "ResetPasswordViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Models\\ResetPasswordViewModel.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Models\\ResetPasswordViewModel.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Models\\ResetPasswordViewModel.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Models\\ResetPasswordViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T05:11:35.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 88,
+              "Title": "ForgotPasswordViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Models\\ForgotPasswordViewModel.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Models\\ForgotPasswordViewModel.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Models\\ForgotPasswordViewModel.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Models\\ForgotPasswordViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T04:05:28.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 89,
+              "Title": "VnPaymentResponseModel.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Models\\VnPaymentResponseModel.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Models\\VnPaymentResponseModel.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Models\\VnPaymentResponseModel.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Models\\VnPaymentResponseModel.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAA8wAkAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T05:16:12.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 90,
+              "Title": "CheckoutViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Models\\CheckoutViewModel.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Models\\CheckoutViewModel.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Models\\CheckoutViewModel.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Models\\CheckoutViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAYAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T06:10:18.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 108,
+              "Title": "20240919070030_UpdateOrderModel.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Migrations\\20240919070030_UpdateOrderModel.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Migrations\\20240919070030_UpdateOrderModel.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Migrations\\20240919070030_UpdateOrderModel.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Migrations\\20240919070030_UpdateOrderModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T07:00:30.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 91,
+              "Title": "ShoppingCartViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Models\\ShoppingCartViewModel.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Models\\ShoppingCartViewModel.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Models\\ShoppingCartViewModel.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Models\\ShoppingCartViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T05:35:27.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 92,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\User\\Profile.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Views\\User\\Profile.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\User\\Profile.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Views\\User\\Profile.cshtml",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAAGAAAABxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-09T06:50:40.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 93,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-14T07:34:52.66Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 94,
+              "Title": "RolesModel.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Models\\RolesModel.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Models\\RolesModel.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Models\\RolesModel.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Models\\RolesModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T07:52:40.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 96,
+              "Title": "20240905065444_AddInvoiceDetailsUpdate2.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Migrations\\20240905065444_AddInvoiceDetailsUpdate2.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Migrations\\20240905065444_AddInvoiceDetailsUpdate2.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Migrations\\20240905065444_AddInvoiceDetailsUpdate2.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Migrations\\20240905065444_AddInvoiceDetailsUpdate2.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T06:54:44.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 95,
+              "Title": "20240905065622_AddInvoiceDetailsUpdate3.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Migrations\\20240905065622_AddInvoiceDetailsUpdate3.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Migrations\\20240905065622_AddInvoiceDetailsUpdate3.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Migrations\\20240905065622_AddInvoiceDetailsUpdate3.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Migrations\\20240905065622_AddInvoiceDetailsUpdate3.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T06:56:22.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 97,
+              "Title": "20240905064940_AddInvoiceDetailsUpdate1.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Migrations\\20240905064940_AddInvoiceDetailsUpdate1.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Migrations\\20240905064940_AddInvoiceDetailsUpdate1.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Migrations\\20240905064940_AddInvoiceDetailsUpdate1.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Migrations\\20240905064940_AddInvoiceDetailsUpdate1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T06:49:40.487Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 98,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Models\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Models\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Models\\RegisterViewModel.cs",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Models\\RegisterViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T09:28:52.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 99,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-05T06:58:04.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 101,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\wwwroot\\js\\site.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-06T05:08:47.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 100,
+              "Title": "setting-demo.js",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\wwwroot\\js\\setting-demo.js",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\wwwroot\\js\\setting-demo.js",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\wwwroot\\js\\setting-demo.js",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\wwwroot\\js\\setting-demo.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEwAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-08T09:23:20.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 103,
+              "Title": "kaiadmin.js",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\wwwroot\\js\\kaiadmin.js",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\wwwroot\\js\\kaiadmin.js",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\wwwroot\\js\\kaiadmin.js",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\wwwroot\\js\\kaiadmin.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-08T09:22:14.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 104,
+              "Title": "demo.js",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\wwwroot\\js\\demo.js",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\wwwroot\\js\\demo.js",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\wwwroot\\js\\demo.js",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\wwwroot\\js\\demo.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-08T09:23:07.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 102,
+              "Title": "kaiadmin.min.js",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\wwwroot\\js\\kaiadmin.min.js",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\wwwroot\\js\\kaiadmin.min.js",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\wwwroot\\js\\kaiadmin.min.js",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\wwwroot\\js\\kaiadmin.min.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-08T09:23:23.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 105,
+              "Title": "Index.js",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\wwwroot\\js\\Index.js",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\wwwroot\\js\\Index.js",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\wwwroot\\js\\Index.js",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\wwwroot\\js\\Index.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-08T09:04:42.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 106,
+              "Title": "CategoryAdmin.js",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\wwwroot\\js\\CategoryAdmin.js",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\wwwroot\\js\\CategoryAdmin.js",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\wwwroot\\js\\CategoryAdmin.js",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\wwwroot\\js\\CategoryAdmin.js",
+              "ViewState": "AQIAADkAAAAAAAAAAAAkwGMAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-05T12:50:43.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 107,
+              "Title": "admin.js",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\wwwroot\\js\\admin.js",
+              "RelativeDocumentMoniker": "Website_InAnQuangCaoHTD\\wwwroot\\js\\admin.js",
+              "ToolTip": "C:\\Users\\ASUS\\Source\\Repos\\Website_InAnQuangCaoHTD\\Website_InAnQuangCaoHTD\\wwwroot\\js\\admin.js",
+              "RelativeToolTip": "Website_InAnQuangCaoHTD\\wwwroot\\js\\admin.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-05T12:54:07.057Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

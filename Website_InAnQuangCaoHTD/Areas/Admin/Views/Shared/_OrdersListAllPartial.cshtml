@@ -1,0 +1,242 @@
+﻿@model IEnumerable<Website_InAnQuangCaoHTD.Models.Order>
+<!-- Thêm CSS cho DataTables -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css">
+
+<!-- Thêm CSS cho Bootstrap nếu chưa có -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<table class="table table-striped table-bordered" id="OrderListAll">
+    <thead class="thead-dark">
+        <tr>
+            <th>Mã Đơn Hàng</th>
+            <th>Người Dùng</th>
+            <th>Ngày Đặt</th>
+            <th>Trạng Thái</th>
+            <th>Tổng Số Tiền</th>
+            <th>Ngày Giao Hàng</th>
+            <th>Trạng Thái Thanh Toán</th>
+            <th>Hành Động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            foreach (var order in Model)
+            {
+                <tr>
+                    <td>@order.OrderId</td>
+                    <td>@order.Users.UserName (@order.Users.UserEmail)</td>              
+                    <td>@order.OrderDate.ToString("dd/MM/yyyy")</td>
+                    <td>
+                        @if (order.OrderStatus == 1)
+                        {
+                            <button class="btn btn-info btn-sm" onclick="updateOrderStatus(@order.OrderId)" title="Cập Nhật Trạng Thái">
+                                <i class="fas fa-sync"></i> Vận chuyển
+                            </button>
+                        }
+                        else if (order.OrderStatus == 2)
+                        {
+                            <span class="badge badge-primary">Đang Giao Hàng</span>
+                        }
+                        else if (order.OrderStatus == 3)
+                        {
+                            <span class="badge badge-danger">Đã bị hủy</span>
+                        }
+                        else
+                        {
+                            <span class="badge badge-success">Đã xử lý</span>
+                        }
+                    </td>
+
+                    <td>@order.TotalPrice.ToString("N0", new System.Globalization.CultureInfo("vi-VN")) VNĐ</td>
+                    <td>@order.DeliveryDate?.ToString("dd/MM/yyyy")</td>
+                    <td>
+                        @if (!order.IsPaid)
+                        {
+                            <button class="btn btn-warning btn-sm" onclick="showPaymentStatusModal(@order.OrderId)" title="Cập Nhật Thanh Toán">
+                                <i class="fas fa-money-check-alt"></i> Chưa thanh toán
+                            </button>
+                        }
+                        else
+                        {
+                            <span class="badge badge-success">Đã Thanh Toán</span>
+                        }
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm" onclick="showDetails(@order.OrderId)" title="Xem chi tiết">
+                            <i class="fas fa-info-circle"></i> Xem chi tiết
+                        </button>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="8" class="text-center">Không có đơn hàng nào</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<!-- Thêm JavaScript cho jQuery và DataTables -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.print.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<!-- Modal -->
+<div class="modal fade" id="paymentStatusModal" tabindex="-1" role="dialog" aria-labelledby="paymentStatusModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="paymentStatusModalLabel">Cập Nhật Trạng Thái Thanh Toán</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="paymentStatusForm">
+                    <input type="hidden" id="paymentOrderId" name="orderId" />
+                    <div class="form-group">
+                        <label for="paymentStatus">Trạng Thái Thanh Toán</label>
+                        <select class="form-control" id="paymentStatus" name="isPaid" required>
+                            <option value="true">Đã Thanh Toán</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-primary" onclick="updatePaymentStatus()">Cập Nhật</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="orderDetailsModal" tabindex="-1" role="dialog" aria-labelledby="orderDetailsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="orderDetailsModalLabel">Chi Tiết Đơn Hàng</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="orderDetailsContent">
+                <!-- Chi tiết đơn hàng sẽ được nạp vào đây bằng JavaScript -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showPaymentStatusModal(orderId) {
+        $('#paymentOrderId').val(orderId);
+        $('#paymentStatusModal').modal('show');
+    }
+    function updateOrderStatus(orderId) {
+        if (confirm("Bạn có chắc chắn muốn cập nhật trạng thái đơn hàng này?")) {
+            $.ajax({
+                url: 'Admin/ManageOrders/UpdateOrderStatus',
+                type: 'POST',
+                data: { orderId: orderId },
+                success: function (response) {
+                    if (response.success) {
+                        // Cập nhật giao diện sau khi thành công
+                        alert("Trạng thái đơn hàng đã được cập nhật thành công.");
+                        location.reload();  // Reload lại trang để cập nhật trạng thái mới
+                    } else {
+                        alert("Cập nhật trạng thái thất bại.");
+                    }
+                },
+                error: function () {
+                    alert("Có lỗi xảy ra khi cập nhật trạng thái.");
+                }
+            });
+        }
+    }
+
+    function updatePaymentStatus() {
+        var orderId = $('#paymentOrderId').val();
+        var isPaid = $('#paymentStatus').val() === 'true';
+
+        if (orderId !== null) {
+            $.post('/Admin/ManageOrders/UpdatePaymentStatus', { orderId: orderId, isPaid: isPaid }, function (response) {
+                if (response.success) {
+                    alert("Trạng thái thanh toán đã được cập nhật.");
+                    $('#paymentStatusModal').modal('hide');
+                    location.reload();
+                } else {
+                    alert("Có lỗi xảy ra khi cập nhật trạng thái thanh toán.");
+                }
+            });
+        } else {
+            alert("Vui lòng chọn đầy đủ thông tin.");
+        }
+    }
+    function showDetails(orderId) {
+        // Gửi yêu cầu để lấy chi tiết đơn hàng
+        $.get('/Admin/ManageOrders/GetOrderDetails', { orderId: orderId }, function (data) {
+            // Hiển thị dữ liệu vào modal
+            $('#orderDetailsContent').html(data);
+            $('#orderDetailsModal').modal('show');
+        });
+    }
+    
+    $(document).ready(function () {
+        $('#OrderListAll').DataTable({
+            "language": {
+                "url": "https://cdn.datatables.net/plug-ins/1.11.5/i18n/vi.json"
+            },
+            "paging": true,
+            "ordering": true,
+            "info": true,
+            "pageLength": 10,
+            "order": [[2, "asc"]],
+            dom: 'Bfrtip',
+            buttons: [
+                {
+                    extend: 'copy',
+                    text: '<i class="fas fa-copy"></i> Sao chép',
+                    className: 'btn btn-primary'
+                },
+                {
+                    extend: 'csv',
+                    text: '<i class="fas fa-file-csv"></i> CSV',
+                    className: 'btn btn-primary'
+                },
+                {
+                    extend: 'excel',
+                    text: '<i class="fas fa-file-excel"></i> Excel',
+                    className: 'btn btn-success',
+                    exportOptions: {
+                        columns: [0, 1, 2, 3, 4, 5, 6]
+                    }
+                },
+                {
+                    extend: 'pdf',
+                    text: '<i class="fas fa-file-pdf"></i> PDF',
+                    className: 'btn btn-danger',
+                    exportOptions: {
+                        columns: [0, 1, 2, 3, 4, 5, 6]
+                    }
+                },
+                {
+                    extend: 'print',
+                    text: '<i class="fas fa-print"></i> In',
+                    className: 'btn btn-info',
+                    exportOptions: {
+                        columns: [0, 1, 2, 3, 4, 5, 6]
+                    }
+                }
+            ]
+        });
+    });
+</script>

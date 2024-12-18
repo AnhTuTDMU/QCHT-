@@ -1,0 +1,10 @@
+﻿@{
+    var Sliders = ViewData["Sliders"] as List<Website_InAnQuangCaoHTD.Models.Slider> ?? new List<Website_InAnQuangCaoHTD.Models.Slider>();
+    var Subcategorys = ViewData["Subcategory"] as List<Website_InAnQuangCaoHTD.Models.SubCategory> ?? new List<Website_InAnQuangCaoHTD.Models.SubCategory>();
+    var FlashSales = ViewData["FlashSales"];
+    var PopularProducts = ViewData["PopularProducts"];
+}
+@Html.Partial("_sliderPartial", Sliders)
+@Html.Partial("_SubCategoryPartial", Subcategorys)
+@Html.Partial("_FlashSalePartial", FlashSales)
+@Html.Partial("_PopularProductsPartial", PopularProducts)

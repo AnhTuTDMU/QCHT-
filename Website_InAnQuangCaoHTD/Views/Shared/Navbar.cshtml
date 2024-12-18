@@ -1,0 +1,160 @@
+﻿@model List<Website_InAnQuangCaoHTD.Models.NavbarViewModel>
+
+@if (Model != null && Model.Any())
+{
+    int index = 0;
+    <div class="container clearfix">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand btn btn-outline-success" href="#">MẪU THIẾT KẾ</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg class="svg-inline--fa fa-bars" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"></path>
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        @foreach (var category in Model)
+                        {
+                            var menuClass = index == 0 ? "menuboxshow" : (index == 1 ? "menuboxshow_1" : (index == 2 ? "menuboxshow_2" : ""));
+                            var Idmenuboxshow = index == 0 ? "menuboxshow" : (index == 1 ? "menuboxshow_1" : (index == 2 ? "menuboxshow_2" : ""));
+                            <li class="nav-item dropdown position-relative">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    @category.CategoryName
+                                </a>
+                                <ul class="dropdown-menu container-fluid" aria-labelledby="navbarDropdown">
+                                    <div class="@menuClass" id="@Idmenuboxshow">
+                                        <div class="row">
+                                            <div class="col-md-3 d-flex justify-content-center" id="productImageContainer">
+                                                <img src="/img/DanhThiep_1.jpg" width="100%" height="100%" class="productImage" style="padding: 15px; border-radius: 30px" />
+                                                <span class="productPrice" style="text-align: left; padding: 10px; font-size: 1.2em;"></span>
+                                            </div>
+                                            @foreach (var subCategory in category.SubCategories)
+                                            {
+                                                <div class="col-md-3">
+                                                    <li>
+                                                        <a class="dropdown-item" style="color: green; font-size: 23px; font-weight: 500" href="@Url.Action("GetAllSubCategory","Product", new { id = subCategory.SubCategoryID })">
+                                                                        @subCategory.SubCategoryName
+                                                        </a>
+                                                    </li>
+                                                    @foreach (var product in subCategory.Products)
+                                                    {
+                                                        <li>
+                                                <a class="dropdown-item product-link" href="@Url.Action("Details", "Product", new { id = product.ProductID })" data-image="/img/@product.ImageFileName" data-price="@product.Price">
+                                                                       @product.ProductName
+                                                            </a>
+                                                        </li>
+                                                    }
+                                                </div>
+                                            }
+                                    </div>
+                            </div>
+                                    <!-- Mobile -->
+                                    <div class="d-block d-lg-none">
+                                        @foreach (var subCategory in category.SubCategories)
+                                        {
+                                            <a class="dropdown-item" href="#">@subCategory.SubCategoryName</a>
+                                        }
+                                     </div>
+                                </ul>
+                            </li>
+                         index++;
+                        }
+
+                    </ul>
+                    <ul style="display: flex; justify-content: center; align-items: center; margin: 0px;">
+                        <li class="nav-item">
+                            <a class="pointer" href="#">
+                                <img loading="lazy" class="img-not-scroll show" src="https://thegioiinan.com/static/images/quote.png" style="height: 48px;" alt="Tạo kế hoạch in ấn cho riêng bạn">
+                            </a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                            <a class="pointer" href="@Url.Action("Index","ShoppingCart")">
+                                <i style="font-size: 22px;" class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" asp-action="Search" asp-controller="Product" method="get">
+                        <input class="form-control me-2" type="search" name="searchTerm" placeholder="Tìm kiếm" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+}
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var productLinks = document.querySelectorAll('.product-link');
+
+        // Thiết lập hình ảnh mặc định cho tất cả các menuBox khi trang được tải
+        function setDefaultImages() {
+            var menuBoxes = document.querySelectorAll('.menuboxshow, .menuboxshow_1, .menuboxshow_2');
+
+            menuBoxes.forEach(function (menuBox) {
+                var defaultImageUrl = '/img/04820a18-b678-40ff-89d6-f18914f695d9_4b1a1cd0-b999-4839-ae3e-b05a866bb409_DanhThiep_1.jpg'; // Hình ảnh mặc định chung
+
+                if (menuBox.classList.contains('menuboxshow_1')) {
+                    defaultImageUrl = '/img/e7d90d57-7866-4409-84d8-828e4a345a84_BangRonPoster.jpg'; // Hình ảnh mặc định cho menuboxshow_1
+                } else if (menuBox.classList.contains('menuboxshow_2')) {
+                    defaultImageUrl = '/img/Decal_1.jpg'; // Hình ảnh mặc định cho menuboxshow_2
+                }
+
+                var productImage = menuBox.querySelector('.productImage');
+                if (productImage) {
+                    productImage.src = defaultImageUrl;
+                }
+            });
+        }
+
+        // Gọi hàm để thiết lập hình ảnh mặc định khi trang được tải
+        setDefaultImages();
+
+        // Xử lý sự kiện hover cho các liên kết sản phẩm
+        productLinks.forEach(function (link) {
+            link.addEventListener('mouseover', function () {
+                var imageUrl = link.getAttribute('data-image');
+                var price = link.getAttribute('data-price');
+                var menuBox = link.closest('.menuboxshow, .menuboxshow_1, .menuboxshow_2');
+                var productImage = menuBox ? menuBox.querySelector('.productImage') : null;
+                var productPrice = menuBox ? menuBox.querySelector('.productPrice') : null;
+
+                if (productImage && imageUrl) {
+                    productImage.src = imageUrl;
+                }
+
+                if (productPrice && price) {
+                    productPrice.textContent = price + ' VNĐ'; // Hiển thị giá với đơn vị tiền tệ
+                }
+            });
+
+            link.addEventListener('mouseout', function () {
+                var menuBox = link.closest('.menuboxshow, .menuboxshow_1, .menuboxshow_2');
+                var productImage = menuBox ? menuBox.querySelector('.productImage') : null;
+                var productPrice = menuBox ? menuBox.querySelector('.productPrice') : null;
+
+                if (productImage) {
+                    // Thiết lập lại hình ảnh mặc định khi không còn hover
+                    var defaultImageUrl = '/img/04820a18-b678-40ff-89d6-f18914f695d9_4b1a1cd0-b999-4839-ae3e-b05a866bb409_DanhThiep_1.jpg';
+
+                    if (menuBox.classList.contains('menuboxshow_1')) {
+                        defaultImageUrl = '/img/e7d90d57-7866-4409-84d8-828e4a345a84_BangRonPoster.jpg';
+                    } else if (menuBox.classList.contains('menuboxshow_2')) {
+                        defaultImageUrl = '/img/Decal_1.jpg';
+                    }
+
+                    productImage.src = defaultImageUrl;
+                }
+                if (productPrice) {
+                    // Thiết lập lại giá mặc định khi không còn hover
+                    productPrice.textContent = ''; // Hoặc giá mặc định nếu có
+                }
+            });
+        });
+    });
+
+
+</script>

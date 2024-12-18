@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Thêm jQuery từ CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+@model Website_InAnQuangCaoHTD.Models.UsersModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section class="vh-100" style="background-color: #f4f5f7;">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col col-lg-6 mb-4 mb-lg-0">
+                <div class="card mb-3" style="border-radius: .5rem;">
+                    <div class="row g-0">
+                        <div class="col-md-4 gradient-custom text-center text-white"
+                             style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;">
+                            <img src="/img/@Model.ProfilePicture"
+                                 alt="Avatar" class="img-fluid my-5" style="width: 150px; height: 150px; border-radius: 15px;" />
+                            <h5 style="color: darkgreen">@Model.UserName</h5>
+                            <p style="color: gray">@Model.Address</p>
+                            <i class="far fa-edit mb-5"></i>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body p-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6>Thông tin cá nhân</h6>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#editProfileModal">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                </div>
+                            
+                                <hr class="mt-0 mb-4">
+                                <div class="row pt-1 d-flex">
+                                    <div class="col-6 mb-3">
+                                        <h6>Email</h6>
+                                        <p class="text-muted d-flex">@Model.UserEmail</p>
+                                    </div>
+                                </div>
+                                <div class="row pt-1">
+                                    <div class="col-6 mb-3">
+                                        <h6>Số điện thoại</h6>
+                                        <p class="text-muted">@Model.PhoneNumber</p>
+                                    </div>
+                                </div>
+
+                                <h6>Thông tin đơn hàng</h6>
+                                <hr class="mt-0 mb-4">
+                                <div class="row pt-1">
+                                    <div class="col-6 mb-3">
+                                        <h6>Đơn hàng đã mua</h6>
+                                        <p id="totalOrders" class="text-muted">Đang tải...</p>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <h6>Tổng tiền đã mua</h6>
+                                        <p id="totalAmount" class="text-muted">Đang tải...</p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-start">
+                                    <a href="#!"><i class="fab fa-facebook-f fa-lg me-3"></i></a>
+                                    <a href="#!"><i class="fab fa-twitter fa-lg me-3"></i></a>
+                                    <a href="#!"><i class="fab fa-instagram fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Modal -->
+<div class="modal fade" id="editProfileModal" tabindex="-1" role="dialog" aria-labelledby="editProfileModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editProfileModalLabel">Chỉnh sửa thông tin cá nhân</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form id="editProfileForm" enctype="multipart/form-data">
+                <div class="modal-body">
+                    <input type="hidden" id="UserId" name="UserId" value="@Model.UserId">
+                    <div class="form-group">
+                        <label for="UserName">Tên người dùng</label>
+                        <input type="text" class="form-control" id="UserName" name="UserName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="UserEmail">Email</label>
+                        <input type="text" class="form-control" id="UserEmail" name="UserEmail" required readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="PhoneNumber">Số điện thoại</label>
+                        <input type="text" class="form-control" id="PhoneNumber" name="PhoneNumber" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Address">Địa chỉ</label>
+                        <input type="text" class="form-control" id="Address" name="Address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="FrontImg">Ảnh đại diện</label>
+                        <input type="file" class="form-control-file" id="FrontImg" name="FrontImg" accept="image/*">
+                        <img id="profileImagePreview" src="#" alt="Ảnh đại diện" style="display: none; width: 150px; height:150px; margin-top: 10px;">
+                    </div>
+                    <div class="mb-3">
+                        <img id="editCategoryImagePreview" src="#" alt="Image Preview" style="display:none; max-width: 100%; height: auto;" />
+                    </div>
+                    <input type="hidden" id="RoleId" name="RoleId" value="2">
+                    <div id="editProfileErrors" class="alert alert-danger d-none"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                    <button type="submit" class="btn btn-primary">Lưu thay đổi</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        var userId = @Model.UserId;
+        $.ajax({
+            url: '/User/OrderSummary',
+            type: 'GET',
+            data: { userId: userId },
+            success: function (response) {
+                if (response.success) {
+                    // Cập nhật nội dung trên trang
+                    $('#totalOrders').text(response.totalOrders);
+                        var formattedAmount = response.totalAmount.toLocaleString('vi-VN') + ' VNĐ';
+                        $('#totalAmount').text(formattedAmount);
+                } else {
+                    // Xử lý khi không có dữ liệu
+                    $('#totalOrders').text('N/A');
+                    $('#totalAmount').text('N/A');
+                }
+            },
+            error: function () {
+                // Xử lý lỗi khi yêu cầu AJAX không thành công
+                $('#totalOrders').text('Error');
+                $('#totalAmount').text('Error');
+            }
+        });
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        const frontImgInput = document.getElementById('FrontImg');
+        const imagePreview = document.getElementById('profileImagePreview');
+
+        frontImgInput.addEventListener('change', function (event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+
+                reader.onload = function (e) {
+                    imagePreview.src = e.target.result;
+                    imagePreview.style.display = 'block'; // Hiển thị ảnh khi đã có
+                };
+
+                reader.readAsDataURL(file);
+            } else {
+                imagePreview.style.display = 'none'; // Ẩn ảnh nếu không có tệp nào được chọn
+            }
+        });
+    });
+    
+</script>
+</body>
+</html>

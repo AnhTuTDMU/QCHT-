@@ -1,0 +1,600 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Website_InAnQuangCaoHTD</title>
+
+    <!-- Icon web-->
+    <link rel="icon" href="./assets/Img/logo.jpg" type="image/x-icon">
+    <!-- Css-->
+    <!-- CSS -->
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet">
+    <!-- JS -->
+    <script src="~/js/site.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <div id="fb-root"></div>
+    <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+    <link rel="stylesheet" href="~/css/index.css" />
+
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.min.css" /> 
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.0.2/css/buttons.dataTables.min.css" />
+    <style>
+        .is-invalid {
+            border-color: #dc3545; /* Đổi màu viền sang đỏ */
+            background-color: #f8d7da; /* Đổi màu nền sang hồng nhạt */
+        }
+
+        .modal-content {
+            border-radius: 8px; /* Làm tròn góc modal */
+        }
+
+        .modal-header {
+            background-color: #f7f7f7; /* Màu nền nhẹ cho header */
+            border-bottom: 1px solid #ddd;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        .modal-title {
+            color: #007bff;
+        }
+
+        .btn-close {
+            font-size: 1.2rem;
+            background: none;
+            border: none;
+            color: #007bff;
+        }
+
+            .btn-close:hover {
+                color: #0056b3;
+            }
+
+        .modal-body {
+            padding: 2rem;
+        }
+
+        .form-label {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .form-control {
+            border-radius: 5px; 
+            box-shadow: none;
+        }
+
+        .input-group select, .input-group input {
+            border-radius: 5px; 
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            padding: 10px 20px;
+            font-size: 1.1rem;
+        }
+
+            .btn-primary:hover {
+                background-color: #0056b3;
+                border-color: #0056b3;
+            }
+
+        .modal-dialog {
+            max-width: 800px; 
+        }
+        .chat-zalo {
+            position: fixed; 
+            bottom: 20px;
+            right: 20px; 
+            z-index: 999; 
+        }
+
+            .chat-zalo img {
+                width: 50px;
+                height: 50px;
+                cursor: pointer;
+                margin-bottom: 70px;
+            }
+
+    </style>
+
+</head>
+<body>
+    <header class="d-flex">
+        <div class="container d-flex justify-content-between align-items-center list-unstyled mb-0 header-container">
+            <span>223 Khu 8 Phường Chánh Nghĩa TP Thủ Dầu Một, Tỉnh Bình Dương</span>
+            <ul class="d-flex justify-content-center align-items-center list-unstyled mb-0">
+                <li>
+                    <a href="#">Kiểm tra đơn hàng</a>
+                </li>
+                <li>
+                    <a href="#">Thông tin hỏi đáp</a>
+                </li>
+                @if (ViewBag.Username != null)
+                {
+                   <li class="nav-item topbar-user dropdown hidden-caret submenu">
+                  <a class="dropdown-toggle profile-pic " data-bs-toggle="dropdown" href="#" aria-expanded="true" style="display: flex; align-items: center;">
+                    <div class="avatar-sm">
+                      <img src="~/img/logo.jpg" width="35" height="30" style="padding-right: 5px;" alt="..." class="avatar-img rounded-circle">
+                    </div>
+                    <span class="profile-username">
+                      <span class="op-7">Hi,</span>
+                                <span class="fw-bold">@ViewBag.Username!</span>
+                    </span>
+                  </a>
+                        <ul class="dropdown-menu dropdown-user animated fadeIn " data-bs-popper="static">
+                            <div class="scroll-wrapper dropdown-user-scroll scrollbar-outer" style="position: relative;"><div class="dropdown-user-scroll scrollbar-outer scroll-content" style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 400px; padding: 7px;">
+                            <li>
+                                <div style=" display: flex; padding: .25rem 1rem;">
+                                    <div style="width: 3.95rem;height: 3.95rem;">
+                                        <img src="~/img/logo.jpg" width="55" height="55" alt="image profile" class="avatar-img rounded">
+                                    </div>
+                                    <div style="padding: 0 10px;">
+                                        <h4 style="margin-bottom: 5px;margin-top: 4px;font-size: 1rem;font-weight: 400;line-height: 1;">
+                                             @ViewBag.Username
+                                        </h4>
+                                        <p style="font-size: 12px;margin-bottom: 5px;">@ViewBag.Useremail</p>                                   
+                                    </div>                             
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown-divider"></div>
+                                <a class="btn btn-xs btn-secondary btn-sm d-block" href="@Url.Action("Profile", "User")">Trang cá nhân</a>
+                                <a class="dropdown-item" href="#" id="openConstructionBookingModal">Đặt lịch thi công</a>
+                                <a class="dropdown-item" href="@Url.Action("Index","OrderHistory")">Lịch sử đặt hàng</a>
+                                <div class="dropdown-divider"></div>
+                                <a id="logoutLink" href="javascript:void(0);" class="btn btn-xs btn btn-danger d-block" onclick="document.getElementById('logoutForm').submit();">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Đăng xuất
+                                </a>
+                                <form id="logoutForm" asp-controller="UserAccount" asp-action="Logout" asp-route-returnUrl="@Url.Action("Login", "UserAccount")" style="display: none;">
+                                    <button type="submit">Đăng xuất</button>
+                                </form>
+                            </li>
+                    </div><div class="scroll-element scroll-x"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="width: 0px;"></div></div></div><div class="scroll-element scroll-y"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="height: 0px;"></div></div></div></div>
+                    </ul>
+                </li>
+                }
+                else
+                {
+                    <li>
+                        <a href="@Url.Action("Login","UserAccount")">Đăng nhập</a>
+                    </li>
+                }
+            </ul>
+        </div>
+        <!-- Modal Đặt lịch thi công -->
+        <div class="modal fade" id="constructionBookingModal" tabindex="-1" aria-labelledby="constructionBookingModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="constructionBookingModalLabel">Đặt lịch thi công</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Form nhập thông tin Đặt lịch thi công -->
+                        <form id="constructionBookingForm">
+                            <!-- Ngày đặt lịch -->
+                            <div class="mb-3">
+                                <label for="bookingDate" class="form-label">Ngày đặt lịch</label>
+                                <input type="date" class="form-control" id="bookingDate" required>
+                            </div>
+                            <!-- Mô tả thi công -->
+                            <div class="mb-3">
+                                <label for="description" class="form-label">Mô tả chi tiết thi công</label>
+                                <textarea class="form-control" id="description" rows="4" placeholder="Nhập mô tả chi tiết về công việc thi công" required></textarea>
+                            </div>
+                            <!-- Địa chỉ -->
+                            <div class="mb-3">
+                                <label for="address" class="form-label">Địa chỉ</label>
+                                <div class="input-group">
+                                    <!-- Dropdown cho phần mã vùng (TPHCM, Bình Dương) -->
+                                    <select class="form-control" id="city" required>
+                                        <option value="">Chọn địa điểm</option>
+                                        <option value="TPHCM">TPHCM</option>
+                                        <option value="Bình Dương">Bình Dương</option>
+                                    </select>
+
+                                    <!-- Trường nhập liệu cho phần địa chỉ -->
+                                    <input type="text" class="form-control" id="street" placeholder="Nhập địa chỉ cụ thể" required>
+                                </div>
+                            </div>
+
+                            <!-- Submit button -->
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Lưu</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Thêm CSS tùy chỉnh cho modal -->
+
+
+
+    </header>
+    <section class="main-header">
+        <div class="container p-3">
+            <div class="row">
+                <div class="col-lg-6">
+                    <a href="@Url.Action("Index","Home")" style="color: white; font-size: 23px; text-decoration: none; ">
+                        <img src="~/img/logo.jpg" width="100" height="100" style="border-radius: 50px;" />
+                        Quảng Cáo HTĐ
+                    </a>
+                </div>
+                <div class="col d-flex justify-content-end" style="align-items: center;">
+                    <img src="~/img/printnow.png" width="150px" />
+                    <img src="~/img/doitra.png" width="150px" />
+                </div>
+            </div>
+        </div>
+    </section>
+    @{
+        var navbarData = ViewData["NavbarData"] as List<Website_InAnQuangCaoHTD.Models.NavbarViewModel> ?? new List<Website_InAnQuangCaoHTD.Models.NavbarViewModel>();
+    }
+
+    @await Html.PartialAsync("Navbar", navbarData)
+ 
+    <df-messenger intent="WELCOME"
+                  chat-icon="https://cdn.onlinewebfonts.com/svg/img_382824.png"
+                  chat-title="QuảngCáoHTĐ"
+                  agent-id="efefcdfc-145d-425a-ba6a-00aca9485e73"
+                  language-code="vi"></df-messenger>
+    <div class="chat-zalo">
+        <a href="https://zalo.me/0925239389" target="_blank">
+            <img title="Chat Zalo" src="~/img/7044033_zalo_icon.png" alt="zalo-icon" width="40" height="40" />
+        </a>
+    </div>
+    <div class="container mt-3">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <div class="container pt-3">
+        <div class="d-flex justify-content-between p-3">
+            <h3 style="color: #005f0e;"><i style="padding-right: 10px;" class="fa-solid fa-shop"></i>ĐẾN VỚI CHÚNG TÔI</h3>
+        </div>
+        <div class="ggmap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3544.6067923531996!2d106.64833887451948!3d10.969561255602668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d14a5c697c23%3A0xf1ea4e08a2d227b9!2zVGhp4bq_dCBL4bq_IC0gUXXhuqNuZyBDw6FvIEhUxJA!5e1!3m2!1svi!2s!4v1734326054229!5m2!1svi!2s" width="1272" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="ggmap"></iframe>
+        </div>
+    </div>
+    <div class="container-fluid" style="background: #0d220d;color: white; padding: 0px 35px 0px 100px;">
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-6 col-md-4 mb-3">
+                    <h5 class="fw-bold">VỀ CHÚNG TÔI</h5>
+                    <div style="margin-top: 5px;">
+                        <span>
+                            <span>CTY TNHH MTV THẾ GIỚI IN ẤN</span> <br>
+                            GPDKKD số: 033261612 <br>
+                        </span>
+                        <br>
+                        <span>
+                            <a>Sáng từ: 8h00 ÷ 12h00</a><br>
+                            <a>
+                                Chiều từ: 13h30 ÷ 17h30 <br>
+                                Thứ 7 từ: 8h ÷ 12h00 <br>
+                                (Nghỉ chiều Thứ 7 &amp; chủ nhật )
+                            </a>
+                        </span>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5 class="fw-bold">CHÍNH SÁCH</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Chính sách bảo hành</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Chính sách đổi trả</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Chính sách bảo mật</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Chính sách bảo trì</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5 class="fw-bold">Liên hệ</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><i style="padding-right: 10px;" class="fa-solid fa-phone"></i>092 523 93 89</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary d-flex align-items-center"><i style="padding-right: 10px; color: blue;" class="fab fa-facebook-square fa-2x"></i>Duc Huynh</a></li>                    
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Hỗ trợ</a></li>
+                        <li class="nav-item mb-2"><a href="@Url.Action("About", "Home")" class="nav-link p-0 text-body-secondary">Giới thiệu</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 offset-md-1 mb-3">
+                    <form>
+                        <h5 class="fw-bold">Phương Thức Thanh Toán</h5>
+                        <a href="#" target="_blank">
+                            <img loading="lazy" src="~/img/payment.png" alt="Công Ty In Ấn Quảng Cáo HTĐ" height="73">
+                        </a>
+                    </form>
+                    <form style="margin-top: 15px;">
+                        <img src="~/img/maqr.jpg" style="border-radius: 10px;" width="200px" alt="Responsive image" />
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>© 2024 NAT. Đã đăng ký bản quyền</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="me-3">
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" style="color: blue;">
+                            <i class="fab fa-facebook-square fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="me-3">
+                        <a href="mailto:quangcaohtd2020@gmail.com" style="color: #D44638;">
+                            <i class="fas fa-envelope fa-2x"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- DataTables JS -->
+    <script src="https://cdn.datatables.net/2.0.8/js/dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.0.2/js/dataTables.buttons.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.0.2/js/buttons.dataTables.js"></script>
+    <!-- pdfMake -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+    <!-- DataTables Buttons JS -->
+    <script src="https://cdn.datatables.net/buttons/3.0.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.0.2/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.0.2/js/buttons.print.min.js"></script>
+    <script>
+        document.getElementById('openConstructionBookingModal').addEventListener('click', function () {
+            $('#constructionBookingModal').modal('show');
+        });
+
+        // Gửi dữ liệu khi người dùng click "Lưu"
+        $("#constructionBookingForm").on('submit', function (e) {
+            e.preventDefault();  // Ngừng việc gửi form mặc định
+
+            var bookingDate = $("#bookingDate").val();
+            var description = $("#description").val();
+            var city = $("#city").val();
+            var street = $("#street").val();
+            var fullAddress = street + " " + city;
+         
+
+            $.ajax({
+                url: '/ConstructionBooking/CreateConstructionBooking',
+                type: 'POST',
+                data:
+                {
+                    BookingDate: bookingDate,
+                    Description: description,
+                    Address: fullAddress
+                },
+                success: function (response) {
+                    alert(response.message);
+                    $('#constructionBookingModal').modal('hide');  
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error:', status, error);
+                    alert(response.message);
+                }
+            });
+        });
+        document.getElementById('bookingDate').addEventListener('focus', function () {
+            const inputField = this;
+
+            // Gửi yêu cầu AJAX đến server để lấy danh sách các ngày đã đặt
+            fetch('/ConstructionBooking/GetBookedDates')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.bookedDates && data.bookedDates.length > 0) {
+                        inputField.disabled = false;
+
+                        // Chuyển các ngày đã đặt vào dạng Set để kiểm tra nhanh
+                        const bookedDates = new Set(data.bookedDates);
+
+                        // Gắn sự kiện change để kiểm tra ngày đã chọn
+                        inputField.addEventListener('change', function () {
+                            const selectedDate = this.value;
+                            if (bookedDates.has(selectedDate)) {
+                                this.classList.add('is-invalid'); // Thêm lớp màu đỏ
+                            } else {
+                                this.classList.remove('is-invalid'); // Xóa lớp màu đỏ
+                            }
+                        });
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+        });
+
+    </script>
+    <script>
+  
+        // JavaScript
+        document.addEventListener('DOMContentLoaded', function () {
+            var loadingScreen = document.getElementById('loadingScreen');
+
+            // Hiển thị loading khi bắt đầu chuyển trang
+            document.querySelectorAll('a').forEach(function (link) {
+                link.addEventListener('click', function () {
+                    if (link.getAttribute('href') !== '#') {
+                        loadingScreen.style.display = 'flex'; // Hiển thị hiệu ứng loading
+                    }
+                });
+            });
+
+            // Ẩn loading khi trang đã tải xong
+            window.addEventListener('load', function () {
+                loadingScreen.style.display = 'none'; // Ẩn hiệu ứng loading
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            var container = document.querySelector('.clearfix');
+            var fixedClass = 'fixed';
+
+            window.addEventListener('scroll', function () {
+                var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+                if (scrollTop > 0) {
+                    // Khi cuộn xuống, thêm lớp "fixed"
+                    container.classList.add(fixedClass);
+                } else {
+                    // Khi cuộn lên đến đỉnh, loại bỏ lớp "fixed"
+                    container.classList.remove(fixedClass);
+                }
+            });
+        });
+        $(document).ready(function () {
+            // Khi modal được mở, nạp dữ liệu hiện tại
+            $('#editProfileModal').on('show.bs.modal', async function () {
+                try {
+                    const response = await $.get('/User/GetUserProfile');
+                    if (response.success) {
+
+                        $('#UserName').val(response.data.userName || '');
+                        $('#UserEmail').val(response.data.userEmail || '');
+                        $('#PhoneNumber').val(response.data.phoneNumber || '');
+                        $('#Address').val(response.data.address || '');
+
+                        // Hiển thị ảnh đại diện nếu có
+                        if (response.data.frontImg) {
+                            $('#profileImagePreview').attr('src', response.data.frontImg).show();
+                        } else {
+                            $('#profileImagePreview').hide();
+                        }
+                    } else {
+                        console.error('Error fetching user profile:', response.message);
+                    }
+                } catch (error) {
+                    console.error('Error fetching user profile:', error);
+                }
+            });
+
+            // Khi file ảnh đại diện được chọn, hiển thị bản xem trước
+            $('#FrontImg').on('change', function () {
+                const file = this.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function (e) {
+                        $('#profileImagePreview').attr('src', e.target.result).show();
+                    };
+                    reader.readAsDataURL(file);
+                } else {
+                    $('#profileImagePreview').hide();
+                }
+            });
+
+            // Khi form trong modal được submit
+            $('#editProfileForm').submit(async function (event) {
+                event.preventDefault(); // Ngăn chặn gửi form theo cách truyền thống
+
+                const formData = new FormData(this);
+                console.log([...formData.entries()]);
+                try {
+                    const response = await $.ajax({
+                        url: '/User/EditProfile',
+                        type: 'POST',
+                        data: formData,
+                        processData: false,
+                        contentType: false,
+                    });
+
+                    if (response.success) {
+                        alert('Cập nhật thành công!');
+                        $('#editProfileModal').modal('hide'); // Đóng modal sau khi cập nhật thành công
+                        location.reload();
+                    } else {
+                        $('#editProfileErrors').html(response.message).removeClass('d-none');
+                    }
+                } catch (error) {
+                    console.error('Error submitting form:', error);
+                    $('#editProfileErrors').html('Đã xảy ra lỗi. Vui lòng thử lại.').removeClass('d-none');
+                }
+            });
+        });
+
+        $(document).ready(function () {
+            $('#orderhistory').DataTable({
+                "language": {
+                    "url": "https://cdn.datatables.net/plug-ins/1.11.5/i18n/vi.json"
+                },
+                "paging": true,
+                "ordering": true,
+                "info": true,
+                "pageLength": 20,
+                columnDefs: [
+                    {
+                        // Ẩn cột 'Hành động' (cột thứ 6, chỉ số 5)
+                        targets: 5, // Chỉ số của cột (0-indexed)
+                        visible: true, // Hiển thị cột này trong chế độ bình thường
+                        searchable: false // Không cho phép tìm kiếm trong cột này
+                    }
+                ],
+                layout: {
+                    topStart: {
+                        buttons: [
+                            {
+                                extend: 'copy',
+                                text: '<i class="fas fa-copy"></i> Sao chép',
+                                className: 'btn btn-primary'
+                            },
+                            {
+                                extend: 'csv',
+                                text: '<i class="fas fa-file-csv"></i> CSV',
+                                className: 'btn btn-primary'
+                            },
+                            {
+                                extend: 'excel',
+                                text: '<i class="fas fa-file-excel"></i> Excel',
+                                className: 'btn btn-success',
+                                exportOptions: {
+                                    columns: [0, 1, 2, 3, 4] 
+                                }
+                            },
+                            {
+                                extend: 'pdf',
+                                text: '<i class="fas fa-file-pdf"></i> PDF',
+                                className: 'btn btn-danger',
+                                exportOptions: {
+                                    columns: [0, 1, 2, 3, 4] 
+                                }
+                            },
+                            {
+                                extend: 'print',
+                                text: '<i class="fas fa-print"></i> In',
+                                className: 'btn btn-info',
+                                exportOptions: {
+                                    columns: [0, 1, 2, 3, 4] 
+                                }
+                            }
+                        ]
+                    }
+                }
+
+            });
+        });
+
+    
+
+    </script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/Index.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

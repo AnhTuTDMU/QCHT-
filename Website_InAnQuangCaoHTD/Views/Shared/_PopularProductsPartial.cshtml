@@ -1,0 +1,48 @@
+﻿@model IEnumerable<Website_InAnQuangCaoHTD.Models.Product> 
+<div class="container mt-4">
+    <div class="d-flex justify-content-between p-3">
+        <h3 style="color: #8e0808;"><i style="padding-right: 10px; color: #ff0101;" class="fa-solid fa-heart"></i>ẤN PHẨM PHỔ BIẾN</h3>
+        <span class="btn btn-danger">Tất cả</span>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+            @foreach (var product in Model)
+            {
+                <div class="col">
+                    <div class="card h-100">
+                        <a href="@Url.Action("Details","Product", new { id = product.ProductID })">
+                            <img src="~/img/@product.ImageFileName" class="card-img-top" alt="@product.ProductName">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">@product.ProductName</h5>
+                            <p class="card-text">@product.Description</p>
+                            <a href="@Url.Action("Details", "Product", new { id = product.ProductID })" class="btn btn-primary btn-sm">Xem Chi Tiết</a>
+                            <a href="@Url.Action("Details", "Product", new { id = product.ProductID })" class="btn btn-success btn-sm">Đặt hàng</a>
+                        </div>
+                        <div class="card-footer">
+                            <h6 class="text-success">Chỉ từ @string.Format(new System.Globalization.CultureInfo("vi-VN"), "{0:N0}", product.Price) VNĐ/@product.CategoryProduct</h6>
+                            <small class="text-muted">Đã bán: @product.SoldQuantity</small>
+                        </div>
+                    </div>
+                </div>
+            }
+    </div>
+</div>
+<div class="container pt-3">
+    <div class="d-flex justify-content-between p-3">
+        <h3 style="color: #005f0e;"><i style="padding-right: 10px;" class="fa-solid fa-shop"></i>LIÊN QUAN ĐẾN CHÚNG TÔI</h3>
+    </div>
+    <div class="row" style="margin: 15px 0px 15px 0px;">
+        <div class="col-sm-8">
+            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v21.0&appId=1285689172613643"></script>
+            <div class="fb-video" data-href="https://www.facebook.com/ducdesign0925239389/videos/2375506359481936/" data-width="500" data-show-text="true" data-autoplay="true">
+                <blockquote cite="https://www.facebook.com/ducdesign0925239389/videos/2375506359481936/" class="fb-xfbml-parse-ignore">
+                    <a href="https://www.facebook.com/ducdesign0925239389/videos/2375506359481936/"></a><p>
+                        Lên luôn 🍀🍀🍀
+                        3000 TEA ở đâu đây ta...??? 🧐🧐
+                    </p>Người đăng: <a href="https://www.facebook.com/ducdesign0925239389">THIẾT KẾ - QUẢNG CÁO HTĐ</a> vào Thứ Hai, 11 tháng 11, 2024
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</div>

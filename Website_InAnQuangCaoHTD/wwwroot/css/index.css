@@ -1,0 +1,258 @@
+﻿header {
+    width: 100%;
+    height: 40px;
+    background-color: #0b2d00;
+    border-bottom: 1px solid #878787;
+    color: white;
+}
+
+    header div > span {
+        color: #c3c3c3b3;
+    }
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+    ul li {
+        margin: 0 10px;
+    }
+
+        ul li a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+            ul li a:hover {
+                color: green;
+            }
+
+.pointer {
+    cursor: pointer;
+}
+
+.main-header {
+    background-color: black;
+}
+
+.btn-outline-success:hover {
+    color: white !important;
+    background-color: #28a745 !important;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 100px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(0, 130, 13, 0.7) !important;
+    font-weight: 600;
+}
+
+.navbar-nav .dropdown-menu {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+    z-index: 1000;
+}
+
+
+.dropdown-menu .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    text-align: left;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+.dropdown-menu {
+    display: none;
+}
+
+
+.menuboxshow {
+    width: 1300px;
+    height: 450px;
+    background-color: #ffffff;
+    position: absolute;
+    border-radius: 10px; 
+    top: 0;
+    left: -220px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border: 1px solid #ddd; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menuboxshow_1 {
+    width: 1300px;
+    height: 450px;
+    background-color: #ffffff;
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: -420px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.menuboxshow_2 {
+    width: 1300px;
+    height: 450px;
+    background-color: #ffffff;
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: -598px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.carousel-item img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#hours, #minutes, #seconds {
+    background-color: #ff0101;
+    color: #fff;
+    padding: 3px 7px;
+    font-size: 20px;
+    border-radius: 4px;
+    margin-right: 2px;
+    text-align: center;
+    margin-left: 2px;
+    line-height: 15px;
+    padding-top: 3px;
+    padding-bottom: 1px;
+    font-weight: 300;
+}
+
+.carousel-item_img {
+    width: 260px !important;
+    height: 250px !important;
+}
+
+.color-price {
+    color: #ff0101;
+    font-weight: 500;
+}
+
+.color-price-sale {
+    text-decoration: line-through;
+}
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 90%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    display: none;
+}
+
+.spinner {
+    border: 16px solid #F3F3F4;
+    border-top: 16px solid #075300;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* Hiệu ứng di chuyển sản phẩm vào giỏ hàng */
+@keyframes moveToCart {
+    0% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(100px, -100px); /* Thay đổi giá trị để phù hợp với vị trí giỏ hàng */
+        opacity: 0;
+    }
+}
+
+.move-to-cart {
+    position: absolute;
+    animation: moveToCart 1s ease-in-out forwards;
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 80px;
+    }
+
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-links {
+        margin-top: 10px;
+    }
+
+    .menuboxshow, .menuboxshow_1, .menuboxshow_2{
+        display: none;
+    }
+  
+    .carousel-item img {
+        height: 200px;
+    }
+    .chat-zalo {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 999;
+    }
+
+        .chat-zalo img {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            margin-bottom: 70px;
+        }
+    .fixed {
+        position: fixed !important;
+        left: 90px !important;
+    }
+    df-messenger {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 999;
+    }
+    #ggmap{
+        display: none;
+    }
+}

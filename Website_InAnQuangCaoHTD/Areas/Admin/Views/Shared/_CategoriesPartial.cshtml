@@ -1,0 +1,83 @@
+﻿@model List<Website_InAnQuangCaoHTD.Models.Category>
+@if (Model != null && Model.Any())
+{
+    @foreach (var category in Model)
+    {
+        <li class="category-item" style="display: flex">
+            <a href="javascript:void(0);" onclick="loadSubCategories(@category.CategoryID)" data-category-id="@category.CategoryID" style="padding: 0px !important;">
+                <span class="sub-item">@category.CategoryName</span>
+            </a>
+            <div class="dropdown" style="width: 50px">
+                <a href="javascript:void(0);" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-ellipsis-v"></i> 
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="javascript:void(0);" onclick="deleteCategory(@category.CategoryID)"><i class="fa fa-archive"></i>Xóa</a></li>
+                </ul>              
+            </div>
+        </li>
+    }
+}
+else
+{
+    <span class="sub-item">Không có dữ liệu</span>
+}
+
+<script>
+
+    // Hàm tải sub-categoriess
+    function loadSubCategories(categoryId) {
+
+        $.ajax({
+            url: '/Admin/SubCategory/GetSubCategories',
+            type: 'GET',
+            data: { categoryId: categoryId},
+            success: function (result) {
+                $('#sliderContainer').hide();
+                $('#customercontainer').hide();
+                $('#dashboardContent').hide();
+                $('#subCategoriesContainer').html(result);
+                $('#subCategoriesContainer').show();
+                var selectedCategoryName = $('a[data-category-id="' + categoryId + '"] .sub-item').text();
+                $('#categoryId').val(categoryId);
+                updateTitle(selectedCategoryName);
+            },
+            error: function (xhr, status, error) {
+                console.error('AJAX Error:', status, error);
+                console.error('Response:', xhr.responseText);
+                alert('Có lỗi xảy ra khi tải dữ liệu.');
+            }
+        });
+    }
+
+    // Hàm cập nhật tiêu đề
+    function updateTitle(categoryName) {
+        var titleHtml = `
+                    <h3 class="fw-bold mb-3"> Quản Lý Ấn Phẩm <i class="fa-solid fa-angle-right"></i> <span style="color: #03139a;">${categoryName} </span></h3>
+                `;
+        $('#dynamicTitle').html(titleHtml);
+    }
+
+
+    function deleteCategory(categoryId) {
+        if (confirm('Bạn có chắc chắn muốn xóa danh mục này không?')) {
+            $.ajax({
+                url: '/Admin/Category/DeleteCategory',
+                type: 'POST',
+                data: { id: categoryId },
+                success: function (response) {
+                    if (response.success) {
+                        alert('Danh mục đã được xóa thành công.');
+                        loadCategories(); 
+                    } else {
+                        alert('Lỗi: ' + response.message);
+                    }
+                },
+                error: function (xhr, status, error) {
+                    console.error('Lỗi AJAX:', status, error);
+                    alert('Đã xảy ra lỗi khi xóa danh mục.');
+                }
+            });
+        }
+    }
+</script>

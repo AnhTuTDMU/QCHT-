@@ -1,0 +1,27 @@
+﻿@model Website_InAnQuangCaoHTD.Models.Order
+
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Hình ảnh</th>
+                <th>Tên Sản Phẩm</th>
+                <th>Số lượng</th>
+                <th>Giá</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var detail in Model.OrderDetails)
+            {
+                <tr>
+                    <td>
+                        <img src="/img/@detail.Product.ImageFileName" width="70px" height="70px" />
+                    </td>
+                    <td>@detail.Product.ProductName</td>
+                    <td>@detail.Quantity</td>
+                    <td>@detail.Price.ToString("N0", new System.Globalization.CultureInfo("vi-VN")) VNĐ</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

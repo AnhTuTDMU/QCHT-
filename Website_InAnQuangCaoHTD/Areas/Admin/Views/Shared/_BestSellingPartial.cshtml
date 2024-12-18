@@ -1,0 +1,83 @@
+﻿@model IEnumerable<dynamic>
+@{
+    ViewData["Title"] = "Sản phẩm bán chạy";
+}
+<!-- Biểu đồ danh mục sản phẩm bán chạy -->
+<h1 class="text-center my-4">Biểu đồ danh mục sản phẩm bán chạy</h1>
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <canvas id="bestSellingChart" width="400" height="200"></canvas>
+        </div>
+    </div>
+</div>
+
+<!-- Biểu đồ theo ấn phẩm -->
+<h1 class="text-center my-4">Biểu đồ theo ấn phẩm</h1>
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <canvas id="bestSellingChart_Category" width="400" height="200"></canvas>
+        </div>
+    </div>
+</div>
+
+<!-- Bảng sản phẩm bán chạy -->
+<h2 class="text-center my-4">Danh sách sản phẩm bán chạy</h2>
+<div class="container">
+    <div class="table-responsive">
+        <table id="BestSellingProduct" class="table table-striped table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Số lượng bán</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null && Model.Any())
+                {
+                    int index = 1;
+                    foreach (var product in Model)
+                    {
+                        <tr>
+                            <td>@index</td>
+                            <td>@product.ProductName</td>
+                            <td>@product.SoldQuantity</td>
+                        </tr>
+                        index++;
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="3" class="text-center">Không có dữ liệu</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<style>
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .table th, .table td {
+        text-align: center;
+        vertical-align: middle;
+    }
+    .my-4 {
+        margin-top: 1.5rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+    .table-responsive {
+        margin-top: 20px;
+    }
+
+    canvas {
+        max-width: 100%;
+        height: auto;
+    }
+</style>

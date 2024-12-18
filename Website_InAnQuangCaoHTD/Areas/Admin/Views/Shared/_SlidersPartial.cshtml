@@ -1,0 +1,200 @@
+﻿@model List<Website_InAnQuangCaoHTD.Models.Slider>
+
+<div class="ms-md-auto py-2 py-md-0" style="float: right; margin-bottom: 10px">
+    <a href="javascript:void(0);" class="btn btn-success btn-round" data-bs-toggle="modal" data-bs-target="#addSlider">Thêm mới</a>
+</div>
+
+@if (Model != null && Model.Any())
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Tên ảnh</th>
+                <th>Mô tả</th>
+                <th>Hình ảnh</th>
+                <th style="text-align: right">Hiện thị</th>
+                <th style="text-align: right">Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var slider in Model)
+            {
+                <tr>
+                    <td>@slider.SliderName</td>
+                    <td>@slider.SliderTitle</td>
+                    <td>
+                        <img src="~/img/@slider.SliderImg" width="150" height="150" />
+                    </td>
+
+                    <td style="text-align: right">
+                        <div class="form-check">
+                            <input type="checkbox" id="sliderStatus_@slider.SliderId"
+                                   data-slider-id="@slider.SliderId"
+                            @(slider.SliderStatus ? "checked" : "") />
+                        </div>
+                    </td>
+                    <td style="text-align: right">
+                        <button class="btn btn-danger btn-sm delete-slider" data-slider-id="@slider.SliderId">Xóa</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Không có dữ liệu</p>
+}
+
+<!-- Modal thêm mới slider -->
+<div class="modal fade" id="addSlider" tabindex="-1" aria-labelledby="addSliderLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addSliderLabel">Thêm Mới Ảnh Bìa</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="addSliderForm" enctype="multipart/form-data">
+                    <input type="hidden" name="SliderStatus" value="false" />
+                    <div class="mb-3">
+                        <label for="sliderName" class="form-label">Tên Ảnh</label>
+                        <input type="text" class="form-control" id="sliderName" name="sliderName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="sliderTitle" class="form-label">Mô Tả</label>
+                        <textarea class="form-control" id="sliderTitle" name="sliderTitle" rows="3" required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="sliderImg" class="form-label">Chọn hình ảnh</label>
+                        <input type="file" class="form-control" id="sliderImg" name="sliderImg" accept="image/*" required>
+                    </div>
+                    <div class="mb-3">
+                        <img id="imagePreview" src="#" alt="Image Preview" style="display:none; max-width: 100%; height: auto;" />
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-primary" onclick="submitSliderForm()">Lưu</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function hideAllContainers() {
+        $('#subCategoriesContainer').hide();
+        $('#sliderContainer').hide();
+        $('#customercontainer').hide();
+        $('#dashboardContent').hide();
+        $('#bestSellingProductsContainer').hide();
+        $('#bestSellingChart').hide();
+        $('#bestSellingChart_Category').hide();
+        $('#unprocessedBookingsContainer').hide();
+        $('#odercontainer').hide();
+    }
+    function loadSliders() {
+        $.ajax({
+            url: 'Admin/Sliders/GetSliders',
+            type: 'GET',
+            success: function (data) {
+                hideAllContainers();
+                $('#sliderContainer').html(data);
+                $('#sliderContainer').show();
+            },
+            error: function (xhr, status, error) {
+                console.error('AJAX Error:', status, error);
+                alert('Không thể tải ảnh bìa.');
+            }
+        });
+    }
+    function submitSliderForm() {
+        var formData = new FormData(document.getElementById("addSliderForm"));
+        $.ajax({
+            url: '/Admin/Sliders/AddSliders',
+            type: 'POST',
+            data: formData,
+            contentType: false,
+            processData: false,
+            success: function (response) {
+                if (response.success) {       
+           
+                    $('#addSlider').modal('hide');
+                    loadSliders();
+                    
+                } else {
+                    // Xử lý khi gặp lỗi
+                    alert('Đã xảy ra lỗi khi thêm ảnh bìa. Vui lòng thử lại.');
+                }
+            },
+            error: function (xhr, status, error) {
+                console.error('AJAX Error: ' + status + ' ' + error);
+            }
+        });
+    }
+    $(document).ready(function () {
+        $('.form-check input[type="checkbox"]').change(function () {
+            var sliderId = $(this).data('slider-id');
+            var isChecked = $(this).is(':checked');
+
+            $.ajax({
+                url: '/Admin/Sliders/EditStatus',
+                type: 'POST',
+                data: {
+                    sliderId: sliderId,
+                    sliderStatus: isChecked
+                },
+                success: function (response) {
+                    if (response.success) {
+                        alert('Trạng thái đã được cập nhật.');
+                        loadSliders();
+                    } else {
+                        alert('Có lỗi xảy ra khi cập nhật trạng thái.');
+                    }
+                },
+                error: function (xhr, status, error) {
+                    console.error('AJAX Error:', status, error);
+                    alert('Có lỗi xảy ra khi gửi yêu cầu.');
+                }
+            });
+        });
+    });
+    $(document).ready(function () {
+        $('.delete-slider').click(function () {
+            var sliderId = $(this).data('slider-id');
+
+            if (confirm('Bạn có chắc chắn muốn xóa slider này không?')) {
+                $.ajax({
+                    url: '/Admin/Sliders/DeleteSlider',
+                    type: 'POST',
+                    data: { sliderId: sliderId },
+                    success: function (response) {
+                        if (response.success) {
+                            alert('Slider đã được xóa thành công.');
+                            loadSliders();
+                        } else {
+                            alert('Có lỗi xảy ra khi xóa slider: ' + response.message);
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        console.error('AJAX Error:', status, error);
+                        alert('Có lỗi xảy ra khi gửi yêu cầu.');
+                    }
+                });
+            }
+        });
+    });
+
+    $("#sliderImg").on("change", function () {
+        var file = this.files[0];
+        if (file) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#imagePreview').attr('src', e.target.result).show();
+            };
+            reader.readAsDataURL(file);
+        } else {
+            $('#imagePreview').hide();
+        }
+    });
+</script>

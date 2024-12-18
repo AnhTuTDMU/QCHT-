@@ -1,0 +1,1330 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Trang quản lý HTĐ</title>
+    <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+          name="viewport" />
+    <link rel="icon"
+          href="~/img/logo.jpg"
+          type="image/x-icon" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preload" href="https://fonts.gstatic.com/s/publicsans/v15/ijwRs572Xtc6ZYQws9YVwnNGfJ4.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.0.2/css/buttons.dataTables.min.css" /> 
+  @*   <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css"> *@
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Fonts and icons -->
+    <script src="~/js/plugin/webfont/webfont.min.js"></script>
+    <script>
+        WebFont.load({
+            google: { families: ["Public Sans:300,400,500,600,700"] },
+            custom: {
+                families: [
+                    "Font Awesome 5 Solid",
+                    "Font Awesome 5 Regular",
+                    "Font Awesome 5 Brands",
+                    "simple-line-icons",
+                ],
+              
+            },
+            active: function () {
+                sessionStorage.fonts = true;
+            },
+        });
+    </script>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/plugins.min.css" />
+    <link rel="stylesheet" href="~/css/kaiadmin.min.css" />
+
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <div class="sidebar" data-background-color="dark">
+            <div class="sidebar-logo">
+                <!-- Logo Header -->
+                <div class="logo-header" data-background-color="dark">
+                    <a href="/Admin" class="logo" style="color: white;">
+                        <img src="~/img/logo.jpg"
+                             alt="navbar brand"
+                             class="navbar-brand"
+                             height="60" style="border-radius: 50px;" />
+                             Quảng Cáo HTĐ
+                    </a>
+                    <div class="nav-toggle">
+                        <button class="btn btn-toggle toggle-sidebar">
+                            <i class="gg-menu-right"></i>
+                        </button>
+                        <button class="btn btn-toggle sidenav-toggler">
+                            <i class="gg-menu-left"></i>
+                        </button>
+                    </div>
+                    <button class="topbar-toggler more">
+                        <i class="gg-more-vertical-alt"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="sidebar-wrapper scrollbar scrollbar-inner">
+                <div class="sidebar-content">
+                    <ul class="nav nav-secondary">
+                        <li class="nav-item active">
+                            <a data-bs-toggle="collapse"
+                               href="#javascript:void(0);"
+                               class="collapsed"
+                               onclick="loadDashboard()"
+                               aria-expanded="false">
+                                <i class="fas fa-home"></i>
+                                <p>Tổng Quan</p>
+                                <span class="caret"></span>
+                            </a>       
+                        </li>
+                        <li class="nav-section">
+                            <span class="sidebar-mini-icon">
+                                <i class="fa fa-ellipsis-h"></i>
+                            </span>
+                            <h4 class="text-section">Các Thành Phần</h4>
+                        </li>
+                        <li class="nav-item">
+                            <a data-bs-toggle="collapse" href="#base">
+                                <i class="fas fa-layer-group"></i>
+                                <p>Quản Lý Ấn Phẩm</p>
+                                <span class="caret"></span>
+                            </a>
+                            <div class="collapse" id="base">
+                                <ul class="nav nav-collapse">
+                                        <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#addProductModal">
+                                            <span class="sub-item" style="color: white; font-weight: 700;display: flex; align-items: center;"><i class="fa fa-plus"></i>Thêm Mới Ấn Phẩm</span>
+                                        </a>      
+                                    <li>
+                                         @await Html.PartialAsync("_CategoriesPartial", ViewData["Categories"])
+                                    </li>
+                                    
+                                </ul>
+                            </div>         
+                        </li>
+                        <li class="nav-item">
+                            <a data-bs-toggle="collapse" href="javascript:void(0);" onclick="loadSliders()">
+                                <i class="fa-solid fa-image"></i>
+                                <p>Quản lý tin tức</p>                              
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-bs-toggle="collapse" href="#forms">
+                                <i class="fas fa-pen-square"></i>
+                                <p>Quản lý khách hàng</p>
+                                <span class="caret"></span>
+                            </a>
+                            <div class="collapse" id="forms">
+                                <ul class="nav nav-collapse">
+                                    <li>
+                                        <a href="javascript:void(0);" onclick="loadCustomer()">
+                                            <span class="sub-item">Danh sách khách hàng</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a data-bs-toggle="collapse" href="#tables">
+                                <i class="fas fa-table"></i>
+                                <p>Quản lý đơn hàng</p>
+                                <span class="caret"></span>
+                            </a>
+                            <div class="collapse" id="tables">
+                                <ul class="nav nav-collapse">
+                                    <li>
+                                        <a href="javascript:void(0);" onclick="loadOrders(0)">
+                                            <span class="sub-item">Đơn hàng chờ xử lý</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" onclick="loadOrders(1)">
+                                            <span class="sub-item">Đơn hàng chưa giao</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" onclick="loadOrders(2)">
+                                            <span class="sub-item">Đơn hàng đang vận chuyển</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" onclick="loadOrders(5)">
+                                            <span class="sub-item">Đơn hàng hoàn thành</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" onclick="loadOrders(3)">
+                                            <span class="sub-item">Đơn hàng đã hủy</span>
+                                        </a>
+                                    </li>                      
+                                    <li>
+                                        <a href="javascript:void(0);" onclick="loadOrdersAll()">
+                                            <span class="sub-item">Tất cả đơn hàng</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>                       
+                        <li class="nav-item">
+                            <a data-bs-toggle="collapse" href="#charts">
+                                <i class="far fa-chart-bar"></i>
+                                <p>Báo cáo & thống kê</p>
+                                <span class="caret"></span>
+                            </a>
+                            <div class="collapse" id="charts">
+                                <ul class="nav nav-collapse">
+                                    <li>
+                                        <a href="javascript:void(0);" onclick="loadCustomerNew()">
+                                            <span class="sub-item">Khách hàng mới</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" onclick="loadStatiscal()">
+                                            <span class="sub-item">Sản phẩm bán chạy</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a data-bs-toggle="collapse" href="#charts">
+                                <i class="far fa-chart-bar"></i>
+                                <p>Quản lý lịch thi công</p>
+                                <span class="caret"></span>
+                            </a>
+                            <div class="collapse" id="charts">
+                                <ul class="nav nav-collapse">
+                                    <li>
+                                        <a href="javascript:void(0);" onclick="loadUnprocessedBookings()">
+                                            <span class="sub-item">Chưa xử lý</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" onclick="loadProcessedBookings();">
+                                            <span class="sub-item">Đã xử lý</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End Sidebar -->
+
+        <div class="main-panel">
+            <div class="main-header">
+                <div class="main-header-logo">
+                    <!-- Logo Header -->
+                    <div class="logo-header" data-background-color="dark">
+                        <a href="index.html" class="logo">
+                            <img src="~/img/kaiadmin/logo_light.svg"
+                                 alt="navbar brand"
+                                 class="navbar-brand"
+                                 height="20" />
+                        </a>
+                        <div class="nav-toggle">
+                            <button class="btn btn-toggle toggle-sidebar">
+                                <i class="gg-menu-right"></i>
+                            </button>
+                            <button class="btn btn-toggle sidenav-toggler">
+                                <i class="gg-menu-left"></i>
+                            </button>
+                        </div>
+                        <button class="topbar-toggler more">
+                            <i class="gg-more-vertical-alt"></i>
+                        </button>
+                    </div>
+                    <!-- End Logo Header -->
+                </div>
+                <!-- Navbar Header -->
+                <nav class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom">
+                    <div class="container-fluid">
+                        <nav class="navbar navbar-header-left navbar-expand-lg navbar-form nav-search p-0 d-none d-lg-flex">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <button type="submit" class="btn btn-search pe-1">
+                                        <i class="fa fa-search search-icon"></i>
+                                    </button>
+                                </div>
+                                <input type="text"
+                                       placeholder="Search ..."
+                                       class="form-control" />
+                            </div>
+                        </nav>
+
+                        <ul class="navbar-nav topbar-nav ms-md-auto align-items-center">
+                            <li class="nav-item topbar-icon dropdown hidden-caret d-flex d-lg-none">
+                                <a class="nav-link dropdown-toggle"
+                                   data-bs-toggle="dropdown"
+                                   href="#"
+                                   role="button"
+                                   aria-expanded="false"
+                                   aria-haspopup="true">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-search animated fadeIn">
+                                    <form class="navbar-left navbar-form nav-search">
+                                        <div class="input-group">
+                                            <input type="text"
+                                                   placeholder="Search ..."
+                                                   class="form-control" />
+                                        </div>
+                                    </form>
+                                </ul>
+                            </li>
+                            <li class="nav-item topbar-icon dropdown hidden-caret">
+                                <a class="nav-link dropdown-toggle"
+                                   href="#"
+                                   id="messageDropdown"
+                                   role="button"
+                                   data-bs-toggle="dropdown"
+                                   aria-haspopup="true"
+                                   aria-expanded="false">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                                <ul class="dropdown-menu messages-notif-box animated fadeIn"
+                                    aria-labelledby="messageDropdown">
+                                    <li>
+                                        <div class="dropdown-title d-flex justify-content-between align-items-center">
+                                            Messages
+                                            <a href="#" class="small">Mark all as read</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="message-notif-scroll scrollbar-outer">
+                                            <div class="notif-center">
+                                                <a href="#">
+                                                    <div class="notif-img">
+                                                        <img src="~/img/jm_denis.jpg"
+                                                             alt="Img Profile" />
+                                                    </div>
+                                                    <div class="notif-content">
+                                                        <span class="subject">Jimmy Denis</span>
+                                                        <span class="block"> How are you ? </span>
+                                                        <span class="time">5 minutes ago</span>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="notif-img">
+                                                        <img src="~/img/chadengle.jpg"
+                                                             alt="Img Profile" />
+                                                    </div>
+                                                    <div class="notif-content">
+                                                        <span class="subject">Chad</span>
+                                                        <span class="block"> Ok, Thanks ! </span>
+                                                        <span class="time">12 minutes ago</span>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="notif-img">
+                                                        <img src="~/img/mlane.jpg"
+                                                             alt="Img Profile" />
+                                                    </div>
+                                                    <div class="notif-content">
+                                                        <span class="subject">Jhon Doe</span>
+                                                        <span class="block">
+                                                            Ready for the meeting today...
+                                                        </span>
+                                                        <span class="time">12 minutes ago</span>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="notif-img">
+                                                        <img src="~/img/talha.jpg"
+                                                             alt="Img Profile" />
+                                                    </div>
+                                                    <div class="notif-content">
+                                                        <span class="subject">Talha</span>
+                                                        <span class="block"> Hi, Apa Kabar ? </span>
+                                                        <span class="time">17 minutes ago</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="see-all" href="javascript:void(0);">
+                                            See all messages<i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item topbar-icon dropdown hidden-caret">
+                                <a class="nav-link dropdown-toggle"
+                                   href="#"
+                                   id="notifDropdown"
+                                   role="button"
+                                   data-bs-toggle="dropdown"
+                                   aria-haspopup="true"
+                                   aria-expanded="false">
+                                    <i class="fa fa-bell"></i>
+                                    <span class="notification">4</span>
+                                </a>
+                                <ul class="dropdown-menu notif-box animated fadeIn"
+                                    aria-labelledby="notifDropdown">
+                                    <li>
+                                        <div class="dropdown-title">
+                                            You have 4 new notification
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="notif-scroll scrollbar-outer">
+                                            <div class="notif-center">
+                                                <a href="#">
+                                                    <div class="notif-icon notif-primary">
+                                                        <i class="fa fa-user-plus"></i>
+                                                    </div>
+                                                    <div class="notif-content">
+                                                        <span class="block"> New user registered </span>
+                                                        <span class="time">5 minutes ago</span>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="notif-icon notif-success">
+                                                        <i class="fa fa-comment"></i>
+                                                    </div>
+                                                    <div class="notif-content">
+                                                        <span class="block">
+                                                            Rahmad commented on Admin
+                                                        </span>
+                                                        <span class="time">12 minutes ago</span>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="notif-img">
+                                                        <img src="~/img/profile2.jpg"
+                                                             alt="Img Profile" />
+                                                    </div>
+                                                    <div class="notif-content">
+                                                        <span class="block">
+                                                            Reza send messages to you
+                                                        </span>
+                                                        <span class="time">12 minutes ago</span>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="notif-icon notif-danger">
+                                                        <i class="fa fa-heart"></i>
+                                                    </div>
+                                                    <div class="notif-content">
+                                                        <span class="block"> Farrah liked Admin </span>
+                                                        <span class="time">17 minutes ago</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="see-all" href="javascript:void(0);">
+                                            See all notifications<i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item topbar-icon dropdown hidden-caret">
+                                <a class="nav-link"
+                                   data-bs-toggle="dropdown"
+                                   href="#"
+                                   aria-expanded="false">
+                                    <i class="fas fa-layer-group"></i>
+                                </a>
+                                <div class="dropdown-menu quick-actions animated fadeIn">
+                                    <div class="quick-actions-header">
+                                        <span class="title mb-1">Quick Actions</span>
+                                        <span class="subtitle op-7">Shortcuts</span>
+                                    </div>
+                                    <div class="quick-actions-scroll scrollbar-outer">
+                                        <div class="quick-actions-items">
+                                            <div class="row m-0">
+                                                <a class="col-6 col-md-4 p-0" href="#">
+                                                    <div class="quick-actions-item">
+                                                        <div class="avatar-item bg-danger rounded-circle">
+                                                            <i class="far fa-calendar-alt"></i>
+                                                        </div>
+                                                        <span class="text">Calendar</span>
+                                                    </div>
+                                                </a>
+                                                <a class="col-6 col-md-4 p-0" href="#">
+                                                    <div class="quick-actions-item">
+                                                        <div class="avatar-item bg-warning rounded-circle">
+                                                            <i class="fas fa-map"></i>
+                                                        </div>
+                                                        <span class="text">Maps</span>
+                                                    </div>
+                                                </a>
+                                                <a class="col-6 col-md-4 p-0" href="#">
+                                                    <div class="quick-actions-item">
+                                                        <div class="avatar-item bg-info rounded-circle">
+                                                            <i class="fas fa-file-excel"></i>
+                                                        </div>
+                                                        <span class="text">Reports</span>
+                                                    </div>
+                                                </a>
+                                                <a class="col-6 col-md-4 p-0" href="#">
+                                                    <div class="quick-actions-item">
+                                                        <div class="avatar-item bg-success rounded-circle">
+                                                            <i class="fas fa-envelope"></i>
+                                                        </div>
+                                                        <span class="text">Emails</span>
+                                                    </div>
+                                                </a>
+                                                <a class="col-6 col-md-4 p-0" href="#">
+                                                    <div class="quick-actions-item">
+                                                        <div class="avatar-item bg-primary rounded-circle">
+                                                            <i class="fas fa-file-invoice-dollar"></i>
+                                                        </div>
+                                                        <span class="text">Invoice</span>
+                                                    </div>
+                                                </a>
+                                                <a class="col-6 col-md-4 p-0" href="#">
+                                                    <div class="quick-actions-item">
+                                                        <div class="avatar-item bg-secondary rounded-circle">
+                                                            <i class="fas fa-credit-card"></i>
+                                                        </div>
+                                                        <span class="text">Payments</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="nav-item topbar-user dropdown hidden-caret">
+                                <a class="dropdown-toggle profile-pic"
+                                   data-bs-toggle="dropdown"
+                                   href="#"
+                                   aria-expanded="false">
+                                    <div class="avatar-sm">
+                                        <img src="~/img/profile.jpg"
+                                             alt="..."
+                                             class="avatar-img rounded-circle" />
+                                    </div>
+                                    <span class="profile-username">
+                                        <span class="op-7">Hi,</span>
+                                        <span class="fw-bold"> @ViewBag.Username</span>
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user animated fadeIn">
+                                    <div class="dropdown-user-scroll scrollbar-outer">
+                                    <li>
+                                        <div class="user-box">
+                                            <div class="avatar-lg">
+                                                <img src="~/img/profile.jpg"
+                                                     alt="image profile"
+                                                     class="avatar-img rounded" />
+                                            </div>
+                                            <div class="u-text">
+                                                <h4> @ViewBag.Username</h4>
+                                                <p class="text-muted"> @ViewBag.Useremail</p>
+                                                <a href="#"
+                                                   class="btn btn-xs btn-secondary btn-sm">Trang cá nhân</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">My Profile</a>
+                                        <a class="dropdown-item" href="#">My Balance</a>
+                                        <a class="dropdown-item" href="#">Inbox</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Account Setting</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a id="logoutLinkAdmin" href="javascript:void(0);" class="btn btn-xs btn-danger d-block"
+                                           onclick="document.getElementById('logoutFormAdmin').submit();">
+                                            <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                            Đăng xuất
+                                        </a>
+                                        <form id="logoutFormAdmin" asp-area="Admin" asp-controller="AdminAccount" asp-action="Logout" asp-route-returnUrl="@Url.Action("Home", "Index", new { area = "default" })" style="display: none;">
+                                            <button type="submit">Đăng xuất</button>
+                                        </form>
+
+                                    </li>
+                    </div>
+                    </ul>
+                    </li>
+                    </ul>
+            </div>
+            </nav>
+            <!-- End Navbar -->
+        </div>
+
+        <div class="container">
+            <div class="page-inner">
+                <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row pt-2 pb-4">
+                    <div id="dynamicTitle">
+                        <h3 class="fw-bold mb-3">Tổng quan</h3>
+                        <h6 class="op-7 mb-2">Chào mừng đến với quảng cáo HTĐ</h6>
+                    </div>
+                </div>
+                <div id="dashboardContent">
+                    <!-- Dashboard content sẽ được tải vào đây qua Ajax -->
+
+                </div>
+                <div id="subCategoriesContainer" class="mt-1" >
+                    <!-- Danh sách sub-categories -->
+                    <div id="subCategoriesList">
+                        <!-- Các mục sub-category sẽ được nạp vào đây -->
+                    </div>
+                </div>
+                <div id="sliderContainer" class="mt-1" style="display: none; z-index: 10000">
+                </div>
+                <div id="customercontainer" class="mt-1" style="display: none; z-index: 10000">
+                </div>
+                <div id="odercontainer" class="mt-1" style="display: none; z-index: 10000">
+                </div>
+                <div id="bestSellingProductsContainer" class="mt-1" style="display: none; z-index: 10000"></div>
+                <div id="unprocessedBookingsContainer" class="mt-1" style="display: none; z-index: 10000"></div>
+                <div id="processedBookingsContainer" class="mt-1" style="display: none; z-index: 10000"></div>
+
+                    @RenderBody()
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container-fluid d-flex justify-content-between">
+                <nav class="pull-left">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Quảng Cáo HTĐ
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Trợ giúp </a>
+                        </li>                 
+                    </ul>
+                </nav>
+                <div class="copyright">
+                    2024, Quảng Cáo HTĐ <i class="fa fa-heart heart text-danger"></i> bởi
+                    <a href="#">NAT</a>
+                </div>         
+            </div>
+        </footer>
+    </div>
+    <!-- Modal thêm mới Ấn Phẩm -->
+    <div class="modal fade" id="addProductModal" tabindex="-1" aria-labelledby="addProductModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addProductModalLabel">Thêm Mới Ấn Phẩm</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="addProductForm">
+                        <div class="mb-3">
+                            <label for="categoryName" class="form-label">Tên Ấn Phẩm</label>
+                            <input type="text" class="form-control" id="categoryName" name="categoryName" required />
+                        </div>
+                        <input type="hidden" id="categoryId" name="categoryId" />
+                        <button type="submit" class="btn btn-primary">Thêm Mới</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Custom template | don't include it in your project! -->
+    <div class="custom-template">
+        <div class="title">Settings</div>
+        <div class="custom-content">
+            <div class="switcher">
+                <div class="switch-block">
+                    <h4>Logo Header</h4>
+                    <div class="btnSwitch">
+                        <button type="button"
+                                class="selected changeLogoHeaderColor"
+                                data-color="dark"></button>
+                        <button type="button"
+                                class="changeLogoHeaderColor"
+                                data-color="blue"></button>
+                        <button type="button"
+                                class="changeLogoHeaderColor"
+                                data-color="purple"></button>
+                        <button type="button"
+                                class="changeLogoHeaderColor"
+                                data-color="light-blue"></button>
+                        <button type="button"
+                                class="changeLogoHeaderColor"
+                                data-color="green"></button>
+                        <button type="button"
+                                class="changeLogoHeaderColor"
+                                data-color="orange"></button>
+                        <button type="button"
+                                class="changeLogoHeaderColor"
+                                data-color="red"></button>
+                        <button type="button"
+                                class="changeLogoHeaderColor"
+                                data-color="white"></button>
+                        <br />
+                        <button type="button"
+                                class="changeLogoHeaderColor"
+                                data-color="dark2"></button>
+                        <button type="button"
+                                class="changeLogoHeaderColor"
+                                data-color="blue2"></button>
+                        <button type="button"
+                                class="changeLogoHeaderColor"
+                                data-color="purple2"></button>
+                        <button type="button"
+                                class="changeLogoHeaderColor"
+                                data-color="light-blue2"></button>
+                        <button type="button"
+                                class="changeLogoHeaderColor"
+                                data-color="green2"></button>
+                        <button type="button"
+                                class="changeLogoHeaderColor"
+                                data-color="orange2"></button>
+                        <button type="button"
+                                class="changeLogoHeaderColor"
+                                data-color="red2"></button>
+                    </div>
+                </div>
+                <div class="switch-block">
+                    <h4>Navbar Header</h4>
+                    <div class="btnSwitch">
+                        <button type="button"
+                                class="changeTopBarColor"
+                                data-color="dark"></button>
+                        <button type="button"
+                                class="changeTopBarColor"
+                                data-color="blue"></button>
+                        <button type="button"
+                                class="changeTopBarColor"
+                                data-color="purple"></button>
+                        <button type="button"
+                                class="changeTopBarColor"
+                                data-color="light-blue"></button>
+                        <button type="button"
+                                class="changeTopBarColor"
+                                data-color="green"></button>
+                        <button type="button"
+                                class="changeTopBarColor"
+                                data-color="orange"></button>
+                        <button type="button"
+                                class="changeTopBarColor"
+                                data-color="red"></button>
+                        <button type="button"
+                                class="selected changeTopBarColor"
+                                data-color="white"></button>
+                        <br />
+                        <button type="button"
+                                class="changeTopBarColor"
+                                data-color="dark2"></button>
+                        <button type="button"
+                                class="changeTopBarColor"
+                                data-color="blue2"></button>
+                        <button type="button"
+                                class="changeTopBarColor"
+                                data-color="purple2"></button>
+                        <button type="button"
+                                class="changeTopBarColor"
+                                data-color="light-blue2"></button>
+                        <button type="button"
+                                class="changeTopBarColor"
+                                data-color="green2"></button>
+                        <button type="button"
+                                class="changeTopBarColor"
+                                data-color="orange2"></button>
+                        <button type="button"
+                                class="changeTopBarColor"
+                                data-color="red2"></button>
+                    </div>
+                </div>
+                <div class="switch-block">
+                    <h4>Sidebar</h4>
+                    <div class="btnSwitch">
+                        <button type="button"
+                                class="changeSideBarColor"
+                                data-color="white"></button>
+                        <button type="button"
+                                class="selected changeSideBarColor"
+                                data-color="dark"></button>
+                        <button type="button"
+                                class="changeSideBarColor"
+                                data-color="dark2"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="custom-toggle">
+            <i class="icon-settings"></i>
+        </div>
+    </div>
+    <!-- End Custom template -->
+    </div>
+    <!--   Core JS Files   -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+
+
+    <!-- DataTables -->
+     <script src="https://cdn.datatables.net/2.0.8/js/dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.0.2/js/dataTables.buttons.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.0.2/js/buttons.dataTables.js"></script> 
+
+    <!-- DataTables Buttons JS 3.0.2-->
+    <script src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.print.min.js"></script>
+ 
+    <!-- pdfMake -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+   @*  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script> *@
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>  
+
+    <!-- Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Optional: Local JavaScript files -->
+    <script src="~/js/core/popper.min.js"></script>
+    <script src="~/js/core/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-datepicker"></script>
+
+
+    <script>
+        function hideAllContainers() {
+            $('#subCategoriesContainer').hide();
+            $('#sliderContainer').hide();
+            $('#customercontainer').hide();
+            $('#dashboardContent').hide();        
+            $('#bestSellingProductsContainer').hide();
+            $('#bestSellingChart').hide();
+            $('#bestSellingChart_Category').hide();
+            $('#unprocessedBookingsContainer').hide();
+            $('#odercontainer').hide();
+        }
+        $(document).ready(function () {
+            loadDashboard();
+            loadUserStatistics();
+        });
+        $(document).ready(function () {
+            $('#addProductForm').submit(function (event) {
+                event.preventDefault(); // Ngăn chặn hành vi mặc định của form
+
+                var formData = $(this).serialize(); // Lấy dữ liệu từ form
+
+                $.ajax({
+                    url: '/Admin/Category/AddCategory', 
+                    type: 'POST',
+                    data: formData,
+                    success: function (response) {
+                        alert('Sản phẩm đã được thêm mới thành công!');
+                        $('#addProductModal').modal('hide');
+                        location.reload();
+                    },
+                    error: function (xhr, status, error) {
+                        console.error('AJAX Error:', status, error);
+                        alert('Có lỗi xảy ra khi thêm mới sản phẩm.');
+                    }
+                });
+
+            });
+        });
+        function loadUserStatistics() {
+            $.ajax({
+                url: '/Admin/Customer/GetUserStatistics', 
+                method: 'GET',
+                success: function (data) {
+                    // Tạo mảng chứa tất cả 12 tháng
+                    var allMonths = [
+                        '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'
+                    ];
+
+                    // Tạo đối tượng đếm số người dùng theo tháng
+                    var userCountsByMonth = {};
+                    allMonths.forEach(function (month) {
+                        userCountsByMonth[month] = 0; // Đặt mặc định là 0
+                    });
+
+
+                    data.forEach(function (user) {
+                        userCountsByMonth[user.month] = user.count;
+                    });
+
+                    // Tạo các labels và counts từ đối tượng userCountsByMonth
+                    var labels = allMonths.map(function (month) {
+                        return `Tháng ${month}`;
+                    });
+                    var counts = allMonths.map(function (month) {
+                        return userCountsByMonth[month];
+                    });
+
+                    // Vẽ biểu đồ
+                    var ctx = document.getElementById('userStatisticsChart').getContext('2d');
+                    var userStatisticsChart = new Chart(ctx, {
+                        type: 'line', // 'bar', 'line', 'pie', v.v.
+                        data: {
+                            labels: labels, // Nhãn cho các tháng
+                            datasets: [{
+                                label: 'Số lượng người dùng đăng ký theo tháng',
+                                data: counts, // Dữ liệu cho biểu đồ
+                                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                                borderColor: 'rgba(54, 162, 235, 1)',
+                                borderWidth: 2,
+                                fill: true
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                y: {
+                                    beginAtZero: true,
+                                }
+                            }
+                        }
+                    });
+                },
+                error: function (xhr, status, error) {
+                    console.error('Lỗi khi tải thống kê người dùng:', error);
+                }
+            });
+        }
+        // Vẽ biểu đồ load theo danh mục sản phẩm
+        function renderBestSellingChart(subCategoryNames, soldQuantities) {
+            var ctx = document.getElementById('bestSellingChart').getContext('2d');
+
+            var chart = new Chart(ctx, {
+                type: 'bar',  // Chọn kiểu biểu đồ (bar chart)
+                data: {
+                    labels: subCategoryNames,  // Dữ liệu nhãn (tên sản phẩm)
+                    datasets: [{
+                        label: 'Số lượng bán',
+                        data: soldQuantities,  // Dữ liệu số lượng bán
+                        backgroundColor: 'rgba(75, 192, 192, 0.2)', // Màu nền của cột
+                        borderColor: 'rgba(75, 192, 192, 1)',  // Màu đường viền của cột
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                title: function (tooltipItem) {
+                                    var index = tooltipItem[0].dataIndex;
+                                    return  subCategoryNames[index]; // Hiển thị danh mục sản phẩm trong tooltip
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+        function loadBestSellingProducts() {
+            $.ajax({
+                url: 'Admin/Statistical/BestSellingProducts_SubCategory',
+                type: 'GET',
+                success: function (data) {
+                    if (data && Array.isArray(data)) {
+                        var subCategoryTotals = {};
+
+                        data.forEach(function (product) {
+                            if (subCategoryTotals[product.subCategoryName]) {
+                                subCategoryTotals[product.subCategoryName] += product.soldQuantity; // Cộng dồn số lượng bán
+                            } else {
+                                subCategoryTotals[product.subCategoryName] = product.soldQuantity; // Khởi tạo số lượng bán cho subCategory mới
+                            }
+                        });
+                        // Chuyển đổi đối tượng subCategoryTotals
+                        var subCategoryNames = Object.keys(subCategoryTotals); // Lấy danh sách tên các danh mục phụ
+                        var soldQuantities = subCategoryNames.map(function (subCategoryName) {
+                            return subCategoryTotals[subCategoryName]; // Lấy số lượng bán tổng cộng cho mỗi danh mục
+                        });
+
+                        // Tiến hành vẽ biểu đồ
+                        renderBestSellingChart(subCategoryNames, soldQuantities);
+                    } else {
+                        console.error("Lỗi dữ liệu");
+                    }
+                },
+                error: function (xhr, status, error) {
+                    console.error('Lỗi AJAX:', status, error);
+                    alert('Không thể tải sản phẩm bán chạy.');
+                }
+            });
+        }
+        // Vẽ biểu đồ load theo ấn phẩm
+        function renderBestSellingChart_Category(categoryNames, totalSoldQuantities) {
+            var ctx = document.getElementById('bestSellingChart_Category').getContext('2d'); 
+                var chart = new Chart(ctx, {
+                    type: 'pie', 
+                    data: {
+                        labels: categoryNames, // Các nhãn là tên danh mục
+                        datasets: [{
+                            label: 'Số lượng bán',
+                            data: totalSoldQuantities, // Dữ liệu là tổng số lượng bán
+                            backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#F7A8B8'], // Màu sắc cho các phân khúc trong pie chart
+                            hoverOffset: 4
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                position: 'top',
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: function (tooltipItem) {
+                                        return tooltipItem.label + ': ' + tooltipItem.raw + ' sản phẩm';
+                                    }
+                                }
+                            }
+                        }
+                    }
+            });
+        }
+
+        function loadBestSelling_ProductsCategory() {
+            $.ajax({
+                url: 'Admin/Statistical/BestSellingProducts_Category',
+                type: 'GET',
+                success: function (data) {
+                    if (data && Array.isArray(data)) {
+
+                        // Khởi tạo một đối tượng để nhóm theo CategoryName và cộng dồn soldQuantity
+                        var categorySales = {};
+
+                        // Lặp qua tất cả sản phẩm để nhóm và cộng dồn soldQuantity theo CategoryName
+                        data.forEach(function (product) {
+                            var categoryName = product.categoryName; // Lấy tên danh mục
+                            var soldQuantity = product.soldQuantity; // Lấy số lượng bán
+
+                            // Nếu danh mục đã có trong đối tượng categorySales, cộng dồn số lượng bán
+                            if (categorySales[categoryName]) {
+                                categorySales[categoryName] += soldQuantity;
+                            } else {
+                                // Nếu chưa có, tạo mới và gán số lượng bán
+                                categorySales[categoryName] = soldQuantity;
+                            }
+                        });
+
+                        // Chuyển đổi kết quả thành mảng để vẽ biểu đồ
+                        var categoryNames = Object.keys(categorySales); // Lấy danh sách tên danh mục
+                        var totalSoldQuantities = Object.values(categorySales); // Lấy tổng số lượng bán
+
+                        // Tiến hành vẽ biểu đồ
+                        renderBestSellingChart_Category(categoryNames, totalSoldQuantities);
+                    } else {
+                        console.error("Lỗi dữ liệu");
+                    }
+                },
+                error: function (xhr, status, error) {
+                    console.error('Lỗi AJAX:', status, error);
+                    alert('Không thể tải sản phẩm bán chạy.');
+                }
+            });
+        }
+        function loadDashboard() {
+            $.ajax({
+                url: 'Admin/Home/LoadDashboard',
+                method: 'GET',
+                success: function (result) {
+                    hideAllContainers();
+                    $('#dashboardContent').html(result).show();
+                    updateTitleDashboard();
+                    loadUserStatistics();
+                },
+                error: function (err) {
+                    console.error('Lỗi khi tải Dashboard:', err);
+                }
+            });
+        }
+        function loadSliders() {
+            $.ajax({
+                url: 'Admin/Sliders/GetSliders',
+                type: 'GET',
+                success: function (data) {
+                    hideAllContainers();
+                    $('#sliderContainer').empty().html(data).show();
+                    updateTitleSlider("Danh sách ảnh bìa")
+                },
+                error: function (xhr, status, error) {
+                    console.error('AJAX Error:', status, error);
+                    alert('Không thể tải ảnh bìa.');
+                }
+            });
+        }
+        function loadOrders(status) {
+            $.ajax({
+                url: 'Admin/ManageOrders/GetOrdersByStatus?status=' + status,
+                type: 'GET',
+                success: function (response) {              
+                    var title = "";
+                    switch (status) {
+                        case 0:
+                            title = "<i class='fas fa-hourglass-start'></i> Đơn hàng chờ xử lý"
+                            break;
+                        case 1:
+                            title = "<i class='fas fa-box'></i> Đơn hàng chưa giao";
+                            break;
+                        case 2:
+                            title = "<i class='fas fa-truck'></i> Đơn hàng đang vận chuyển";
+                            break;
+                        case 3:
+                            title = "<i class='fas fa-times-circle'></i> Đơn hàng đã bị hủy";
+                            break;
+                        case 5:
+                            title = "<i class='fas fa-check-circle'></i> Đơn hàng hoàn thành";
+                            break;
+                        default:
+                            title = "<i class='fas fa-list'></i> Danh sách đơn hàng";
+                            break;
+
+                    }
+                    updateTitleOrders(title);
+                    hideAllContainers();
+                    $('#odercontainer').empty().html(response).show();
+                    initializeDataTable();
+                },
+                error: function () {
+                    alert('Không thể tải danh sách đơn hàng.');
+                }
+            });
+        }
+        function initializeDataTable() {
+            $('#OrderListAll').DataTable().destroy(); // Hủy DataTable cũ
+            $('#OrderListAll').DataTable({
+                "language": {
+                    "url": "https://cdn.datatables.net/plug-ins/1.11.5/i18n/vi.json"
+                },
+                paging: true,      // Cho phép phân trang
+                searching: true,   // Cho phép tìm kiếm
+                ordering: true,    // Cho phép sắp xếp cột
+                info: true,        // Hiển thị thông tin về số lượng bản ghi
+                responsive: true,  // Hiển thị responsive cho các thiết bị nhỏ
+                dom: 'Bfrtip',     // Thiết lập vị trí của các nút
+                buttons: [
+                    {
+                        extend: 'copy',
+                        text: '<i class="fas fa-copy"></i> Sao chép',
+                        title: 'Danh sách đơn hàng',
+                        exportOptions: {
+                            columns: [0, 1, 2, 3, 4, 5, 6]
+                        }
+                    },
+                    {
+                        extend: 'excelHtml5',
+                        text: '<i class="fas fa-file-excel"></i> Xuất Excel',
+                        title: 'Danh sách đơn hàng',
+                        className: 'btn btn-success',
+                        exportOptions: {
+                            columns: [0, 1, 2, 3, 4, 5, 6]
+                        }
+                    },
+                    {
+                        extend: 'csvHtml5',
+                        text: '<i class="fas fa-file-csv"></i> Xuất CSV',
+                        title: 'Danh sách đơn hàng',
+                        className: 'btn btn-black',
+                        exportOptions: {
+                            columns: [0, 1, 2, 3, 4, 5, 6]
+                        }
+                    },
+                    {
+                        extend: 'pdfHtml5',
+                        text: '<i class="fas fa-file-pdf"></i> Xuất PDF',
+                        title: 'Danh sách đơn hàng',
+                        orientation: 'portrait',
+                        pageSize: 'A4',
+                        className: 'btn btn-danger',
+                        exportOptions: {
+                            columns: [0, 1, 2, 3, 4, 5, 6]
+                        }
+                    },
+                    {
+                        extend: 'print',
+                        text: '<i class="fas fa-print"></i> In',
+                        title: 'Danh sách đơn hàng',
+                        className: 'btn btn-info',
+                        exportOptions: {
+                            columns: [0, 1, 2, 3, 4, 5, 6]
+                        }
+                    }
+                ],
+
+            });
+        }
+        function loadOrdersAll() {
+            $.ajax({
+                url: 'Admin/ManageOrders/GetOrderAll',
+                type: 'GET',
+                success: function (data) {
+                    hideAllContainers();
+                    $('#odercontainer').empty().html(data).show();
+                    updateTitle("Tất cả đơn hàng")
+                },
+                error: function (xhr, status, error) {
+                    console.error('AJAX Error:', status, error);
+                    alert('Không thể tải danh sách khách hàng.');
+                }
+            });
+        } 
+        function loadCustomer() {
+            $.ajax({
+                url: 'Admin/Customer/GetCustomer',
+                type: 'GET',
+                success: function (data) {
+                    hideAllContainers();
+                    $('#customercontainer').empty().html(data).show();
+                    updateTitle("Danh Sách Khách Hàng")
+                },
+                error: function (xhr, status, error) {
+                    console.error('AJAX Error:', status, error);
+                    alert('Không thể tải danh sách khách hàng.');
+                }
+            });
+        }   
+        function loadStatiscal() {
+            $.ajax({
+                url: 'Admin/Statistical/BestSellingProducts',
+                type: 'GET',
+                success: function (data) {
+                    hideAllContainers();
+                    $('#bestSellingProductsContainer').empty().html(data).show();
+                    updateTitle("Sản phẩm bán chạy nhất")
+                    loadBestSellingProducts();
+                    loadBestSelling_ProductsCategory();
+
+                },
+                error: function (xhr, status, error) {
+                    console.error('AJAX Error:', status, error);
+                    alert('Không thể tải danh sách Sản phẩm.');
+                }
+            });
+        }
+        function loadUnprocessedBookings() {
+            $.ajax({
+                url: 'Admin/ConstructionBooking/GetUnprocessedBookings',
+                type: 'GET',
+                success: function (data) {
+                    hideAllContainers();
+                    $('#unprocessedBookingsContainer').empty().html(data).show();
+                    updateTitle("Danh sách lịch thi công chưa xủ lý")
+                },
+                error: function (xhr, status, error) {
+                    console.error('AJAX Error:', status, error);
+                    alert('Không thể tải danh sách khách hàng.');
+                }
+            });
+        }
+        function loadProcessedBookings() {
+            $.ajax({
+                url: 'Admin/ConstructionBooking/GetProcessedBookings',
+                type: 'GET',
+                success: function (data) {
+                    hideAllContainers();
+                    $('#processedBookingsContainer').empty().html(data).show();
+                    updateTitle("Danh sách lịch thi công đã xử lý")
+                },
+                error: function (xhr, status, error) {
+                    console.error('AJAX Error:', status, error);
+                    alert('Không thể tải danh sách khách hàng.');
+                }
+            });
+        }
+
+        function updateTitleOrders(Name) {
+            var titleHtml = `
+                <h3 class="fw-bold mb-3"> Quản lý đơn hàng <i class="fa-solid fa-angle-right"></i> <span style="color: #03139a;">${Name}</span></h3>
+            `;
+            $('#dynamicTitle').html(titleHtml);
+        }
+
+        function updateTitle(CustomerName) {
+            var titleHtml = `
+                                <h3 class="fw-bold mb-3"> Quản lý khách hàng <i class="fa-solid fa-angle-right"></i> <span style="color: #03139a;">${CustomerName}</span></h3>
+            `;
+            $('#dynamicTitle').html(titleHtml);
+        }
+        function updateTitleSlider(SliderName) {
+            var titleHtml = `
+                                <h3 class="fw-bold mb-3"> Ảnh bìa <i class="fa-solid fa-angle-right"></i> <span style="color: #03139a;">${SliderName}</span></h3>
+                    `;
+            $('#dynamicTitle').html(titleHtml);
+        }
+        function updateTitleDashboard() {
+            var titleHtml = `
+                                 <h3 class="fw-bold mb-3"> Tổng quan <i class="fa-solid fa-angle-right"></i> <span style="color: #03139a;">Chào mừng đến với quảng cáo HTĐ</span></h3>
+                            `;
+            $('#dynamicTitle').html(titleHtml);
+        }
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Chart JS -->
+    <script src="~/js/plugin/chart.js/chart.min.js"></script>
+     <!-- jQuery Scrollbar -->
+    <script src="~/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+    <!-- jQuery Sparkline -->
+    <script src="~/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+    <!-- Chart Circle -->
+    <script src="~/js/plugin/chart-circle/circles.min.js"></script>
+
+    <!-- Datatables -->
+    <script src="~/js/plugin/datatables/datatables.min.js"></script>
+
+    <!-- Bootstrap Notify -->
+    <script src="~/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+
+    <!-- Sweet Alert -->
+    <script src="~/js/plugin/sweetalert/sweetalert.min.js"></script>
+
+    <!-- Kaiadmin JS -->
+    <script src="~/js/kaiadmin.min.js"></script>
+
+    <script>
+        $("#lineChart").sparkline([102, 109, 120, 99, 110, 105, 115], {
+            type: "line",
+            height: "70",
+            width: "100%",
+            lineWidth: "2",
+            lineColor: "#177dff",
+            fillColor: "rgba(23, 125, 255, 0.14)",
+        });
+
+        $("#lineChart2").sparkline([99, 125, 122, 105, 110, 124, 115], {
+            type: "line",
+            height: "70",
+            width: "100%",
+            lineWidth: "2",
+            lineColor: "#f3545d",
+            fillColor: "rgba(243, 84, 93, .14)",
+        });
+
+        $("#lineChart3").sparkline([105, 103, 123, 100, 95, 105, 115], {
+            type: "line",
+            height: "70",
+            width: "100%",
+            lineWidth: "2",
+            lineColor: "#ffa534",
+            fillColor: "rgba(255, 165, 52, .14)",
+        });
+    </script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/Index.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

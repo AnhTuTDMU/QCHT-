@@ -1,0 +1,116 @@
+﻿
+<div class="row">
+    <!-- Số lượng sản phẩm -->
+    <div class="col-sm-6 col-md-3">
+        <div class="card card-stats card-round">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-icon">
+                        <div class="icon-big text-center icon-primary bubble-shadow-small">
+                            <i class="fas fa-box"></i>
+                        </div>
+                    </div>
+                    <div class="col col-stats ms-3 ms-sm-0">
+                        <div class="numbers">
+                            <p class="card-category">Sản phẩm</p>
+                            <h4 class="card-title">@ViewBag.ProductCount</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Số lượng khách hàng -->
+    <div class="col-sm-6 col-md-3">
+        <div class="card card-stats card-round">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-icon">
+                        <div class="icon-big text-center icon-success bubble-shadow-small">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                    <div class="col col-stats ms-3 ms-sm-0">
+                        <div class="numbers">
+                            <p class="card-category">Khách hàng</p>
+                            <h4 class="card-title">@ViewBag.CustomerCount</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Số lượng đơn hàng -->
+    <div class="col-sm-6 col-md-3">
+        <div class="card card-stats card-round">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-icon">
+                        <div class="icon-big text-center icon-warning bubble-shadow-small">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                    <div class="col col-stats ms-3 ms-sm-0">
+                        <div class="numbers">
+                            <p class="card-category">Đơn hàng</p>
+                            <h4 class="card-title">@ViewBag.OrderCount</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tổng doanh thu -->
+    <div class="col-sm-6 col-md-3">
+        <div class="card card-stats card-round">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-icon">
+                        <div class="icon-big text-center icon-danger bubble-shadow-small">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                    </div>
+                    <div class="col col-stats ms-3 ms-sm-0">
+                        <div class="numbers">
+                            <p class="card-category">Doanh thu @DateTime.Now.ToString("MMMM", new System.Globalization.CultureInfo("vi-VN"))</p>
+                            <h4 class="card-title">@ViewBag.MonthlyRevenue.ToString("N0", System.Globalization.CultureInfo.GetCultureInfo("vi-VN"))</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">
+        <div class="card-head-row">
+            <div class="card-title">Thống kê khách hàng</div>
+            <div class="card-tools">
+                <a href="#" class="btn btn-label-success btn-round btn-sm me-2">
+                    <span class="btn-label">
+                        <i class="fa fa-pencil"></i>
+                    </span>
+                    Export
+                </a>
+                <a href="#" class="btn btn-label-info btn-round btn-sm">
+                    <span class="btn-label">
+                        <i class="fa fa-print"></i>
+                    </span>
+                    Print
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <canvas id="userStatisticsChart" width="400" height="200"></canvas>
+    </div>
+
+</div>
+<script>
+    $(document).ready(function () {
+        loadUserStatistics();
+    });
+</script>

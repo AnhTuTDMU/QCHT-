@@ -1,0 +1,498 @@
+﻿@model List<Website_InAnQuangCaoHTD.Models.Product>
+
+<style>
+    #productList tbody tr:hover {
+        background-color: #f5f5f5;
+    }
+
+    #productList button {
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+        #productList button:hover {
+            background-color: #007bff;
+            transform: scale(1.1);
+        }
+
+    .flash-sale-status .alert {
+        padding: 8px 16px;
+        font-size: 0.875rem;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    #productList img {
+        border: 2px solid #ddd;
+        border-radius: 5px;
+    }
+
+    #productList thead th {
+        background-color: #f8f9fa;
+        font-weight: bold;
+        color: #333;
+    }
+
+    #productList td {
+        padding: 12px;
+    }
+
+    .alert-info {
+        background-color: #d1ecf1;
+        border-color: #bee5eb;
+        color: #0c5460;
+    }
+
+</style>
+<div class="ms-md-auto py-2 py-md-0" style="display: flex; justify-content: end; margin-bottom: 10px">
+    <a href="javascript:void(0);" class="btn btn-success btn-round" data-bs-toggle="modal" data-bs-target="#addProductModal">Thêm mới</a>
+</div>
+
+<table id="productList" class="table table-striped">
+    <thead>
+        <tr class="text-center">
+            <th style="width:170px;">Tên sản phẩm</th>
+            <th>Hình ảnh</th>
+            <th>Mô tả</th>
+            <th>Giá tiền</th>
+            <th>Đơn vị tính</th>
+            <th>Kích thước</th>
+            <th>Trạng thái FlashSale</th>
+            <th style="text-align: right">Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr data-product-id="@product.ProductID">
+                <td>@product.ProductName</td>
+                <td>
+                    <img src="/img/@product.ImageFileName" alt="@product.ProductName" style="width: 100px; height: auto;" />
+                </td>
+                <td>
+                    @if (product.Description.Length > 50)
+                    {
+                        @product.Description.Substring(0, 50)
+                    }
+                    else
+                    {
+                        @product.Description
+                    }
+                </td>
+                <td>@product.FormattedPrice</td>
+                <td>@product.CategoryProduct</td>
+                <td>@product.Size</td>
+                <td class="flash-sale-status">
+                    <!-- Trạng thái Flash Sale sẽ được cập nhật qua JavaScript -->
+                </td>
+                <td style="text-align: right">
+                    <button class="btn btn-warning btn-sm" onclick="editProduct(@product.ProductID)" style="width: 60px; margin-bottom: 10px;">
+                        <i class="fas fa-edit"></i>
+                    </button>
+                    <button class="btn btn-danger btn-sm" onclick="deleteProduct(@product.ProductID)" style="width: 60px; margin-bottom: 10px;">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                    
+                    <button class="btn btn-danger btn-sm" onclick="openFlashSaleModal(@product.ProductID)" style="width: 60px; margin-bottom: 10px;">
+                        <i class="fas fa-bolt"></i>
+                    </button>
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>
+<!-- Modal FlashSale-->
+<div class="modal fade" id="flashSaleModal" tabindex="-1" role="dialog" aria-labelledby="flashSaleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="flashSaleModalLabel">Flash Sale</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Nội dung modal -->
+                <form id="flashSaleForm">
+                    <input type="hidden" id="productId" name="productId" />
+                    <div class="form-group">
+                        <label for="flashSalePrice">Giá Flash Sale</label>
+                        <input type="number" class="form-control" id="flashSalePrice" name="flashSalePrice" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="flashSaleStartTime">Thời gian bắt đầu</label>
+                        <input type="datetime-local" class="form-control" id="flashSaleStartTime" name="flashSaleStartTime" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="flashSaleEndTime">Thời gian kết thúc</label>
+                        <input type="datetime-local" class="form-control" id="flashSaleEndTime" name="flashSaleEndTime" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="isActive">Kích hoạt</label>
+                        <input type="checkbox" id="isActive" name="isActive" />
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-primary" onclick="saveFlashSale()">Lưu</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Product Modal -->
+<div class="modal fade" id="addProductModal" tabindex="-1" aria-labelledby="addProductModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addProductModalLabel">Thêm sản phẩm mới</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="addProductForm" enctype="multipart/form-data">
+                    <input type="hidden" id="ProductId" name="ProductId" />
+                    <div class="mb-3">
+                        <label for="productName" class="form-label">Tên sản phẩm</label>
+                        <input type="text" class="form-control" id="productName" name="productName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Description" class="form-label">Mô tả</label>
+                        <textarea class="form-control" id="Description" name="description" required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="price" class="form-label">Giá tiền</label>
+                        <input type="number" class="form-control" id="price" name="price" step="0.01" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="size" class="form-label">Kích thước</label>
+                        <input type="text" class="form-control" id="size" name="size">
+                    </div>
+                    <div class="mb-3">
+                        <label for="category" class="form-label">Đơn vị tính</label>
+                        <select class="form-control" id="category" name="category" required>
+                            <option value="Cái">Cái</option>
+                            <option value="Trang">Trang</option>
+                            <option value="Hộp">Hộp</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="imageFileName" class="form-label">Chọn hình ảnh</label>
+                        <input type="file" class="form-control" id="imageFileName" name="imageFileName" accept="image/*" required>
+                    </div>
+                    <div class="mb-3">
+                        <img id="imagePreview" src="#" alt="Image Preview" style="display:none; max-width: 100%; height: auto;" />
+                    </div>
+                    <input type="hidden" id="subCategoryId" name="subCategoryId" />
+                    <button type="button" class="btn btn-primary" onclick="submitAddProductForm()">Thêm mới</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Edit Product Modal -->
+<div class="modal fade" id="editProductModal" tabindex="-1" aria-labelledby="editProductModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editProductModalLabel">Chỉnh sửa sản phẩm</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="editProductForm">
+                    <input type="hidden" id="editProductId" name="ProductId" />
+                    <div class="mb-3">
+                        <label for="editProductName" class="form-label">Tên sản phẩm</label>
+                        <input type="text" class="form-control" id="editProductName" name="productName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="editDescription" class="form-label">Mô tả</label>
+                        <textarea class="form-control" id="editDescription" name="description" required ></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="editPrice" class="form-label">Giá tiền</label>
+                        <input type="number" class="form-control" id="editPrice" name="price" step="0.01" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="editSize" class="form-label">Kích thước</label>
+                        <input type="text" class="form-control" id="editSize" name="size">
+                    </div>
+                    <div class="mb-3">
+                        <label for="editCategory" class="form-label">Loại</label>
+                        <select class="form-control" id="editCategory" name="CategoryProduct" required>
+                            <option value="Cái">Cái</option>
+                            <option value="Trang">Trang</option>
+                            <option value="Hộp">Hộp</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="editImageFileName" class="form-label">Chọn hình ảnh</label>
+                        <input type="file" class="form-control" id="editImageFileName" name="imageFileName" accept="image/*">
+                        <div class="mt-2">
+                            <span id="editImageFileNameDisplay">Không có tệp nào được chọn</span>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <img id="editImagePreview" src="#" alt="Image Preview" style="display:none; max-width: 100%; height: auto;" />
+                    </div>
+                    <input type="hidden" id="subCategoryId" name="subCategoryId" />
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                        <button type="submit" class="btn btn-primary">Lưu</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function submitAddProductForm() {
+        var formData = new FormData(document.getElementById("addProductForm"));
+        $.ajax({
+            url: '/Admin/Product/AddProduct',
+            type: 'POST',
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (response) {
+                if (response.success) {
+                    alert('Thêm sản phẩm thành công!');
+                    $('#addProductModal').modal('hide');               
+                    loadProducts(formData.get("subCategoryId"));
+                } else {
+                    alert('Có lỗi xảy ra: ' + response.message);
+                }
+            },
+            error: function (xhr, status, error) {
+                console.error('AJAX Error:', status, error);
+                console.error(xhr.responseText);
+                alert('Có lỗi xảy ra khi gửi dữ liệu.');
+            }
+        });
+    }
+
+    function loadProducts(subCategoryId) {
+        $.ajax({
+            url: '/Admin/Product/GetProductsBySubCategory',
+            type: 'GET',
+            data: { subCategoryId: subCategoryId },
+            success: function (response) {
+                var productContainer = $('#subCategoriesContainer');
+                productContainer.empty(); // Xóa nội dung cũ
+                productContainer.html(response);
+            },
+            error: function (xhr, status, error) {
+                console.error('AJAX Error:', status, error);
+                console.error(xhr.responseText);
+                alert('Có lỗi xảy ra khi tải dữ liệu sản phẩm.');
+            }
+        });
+    }
+    function editProduct(productId) {
+        $.ajax({
+            url: '@Url.Action("GetProductEdit", "Product", new { area = "Admin" })',
+            type: 'GET',
+            data: { id: productId },
+            success: function (result) {
+                if (result.productId !== undefined) {
+                    $('#editProductId').val(result.productId);
+                }
+                if (result.productName !== undefined) {
+                    $('#editProductName').val(result.productName);
+                }
+                if (result.description !== undefined) {
+                    $('#editDescription').val(result.description);
+                }
+                if (result.price !== undefined) {
+                    $('#editPrice').val(result.price);
+                }
+                if (result.category !== undefined) {
+                    $('#editCategory').val(result.category);
+                }
+                if (result.size !== undefined) {
+                    $('#editSize').val(result.size);
+                }
+                if (result.imageFileName !== undefined) {
+                    $('#editImageFileNameDisplay').text(result.imageFileName);
+                    $('#editImagePreview').attr('src', '/img/' + result.imageFileName).show();
+                }
+           
+                $('#editProductModal').modal('show');
+            },
+            error: function (xhr, status, error) {
+                console.error('AJAX Error:', status, error);
+                console.error('Response:', xhr.responseText);
+                alert('Có lỗi xảy ra khi tải dữ liệu.');
+            }
+        });
+    }
+
+    $("#editProductForm").on("submit", function (event) {
+        event.preventDefault();
+        var formData = new FormData(this);
+        $.ajax({
+            url: '@Url.Action("SaveProductEdit", "Product", new { area = "Admin" })',
+            type: 'POST',
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (response) {
+                if (response.success) {
+                    alert('Cập nhật sản phẩm thành công!');
+                    $('#editProductModal').modal('hide');
+
+                    loadProducts($("#subCategoryId").val());
+                } else {
+                    alert('Có lỗi xảy ra: ' + response.message);
+                }
+            },
+            error: function (xhr, status, error) {
+                console.error('AJAX Error:', status, error);
+                console.error(xhr.responseText);
+                alert('Có lỗi xảy ra khi gửi dữ liệu.');
+            }
+        });
+    });
+
+
+    function deleteProduct(productId) {
+        if (confirm("Bạn có chắc chắn muốn xóa sản phẩm này?")) {
+            $.ajax({
+                url: '/Admin/Product/DeleteProduct',
+                type: 'POST',
+                data: { id: productId },
+                success: function (response) {
+                    if (response.success) {
+                        alert('Xóa sản phẩm thành công!');
+                        loadProducts($("#subCategoryId").val());
+                    } else {
+                        alert('Có lỗi xảy ra: ' + response.message);
+                    }
+                },
+                error: function (xhr, status, error) {
+                    console.error('AJAX Error:', status, error);
+                    console.error(xhr.responseText);
+                    alert('Có lỗi xảy ra khi gửi dữ liệu.');
+                }
+            });
+        }
+    }
+
+    $("#imageFileName").on("change", function () {
+        var file = this.files[0];
+        if (file) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#imagePreview').attr('src', e.target.result).show();
+            };
+            reader.readAsDataURL(file);
+        } else {
+            $('#imagePreview').hide();
+        }
+    });
+
+    $("#editImageFileName").on("change", function () {
+        var file = this.files[0];
+        if (file) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#editImagePreview').attr('src', e.target.result).show();
+            };
+            reader.readAsDataURL(file);
+            $('#editImageFileNameDisplay').text(file.name);
+        } else {
+            $('#editImagePreview').hide();
+        }
+    });
+    $(document).ready(function () {
+        $('textarea').on('input', function () {
+            this.style.height = 'auto';
+            this.style.height = (this.scrollHeight) + 'px';
+        });
+    });
+    function openFlashSaleModal(productId) {
+        // Gán ProductID vào input ẩn trong form
+        document.getElementById("productId").value = productId;
+
+        // Hiển thị modal
+        $('#flashSaleModal').modal('show');
+    }
+
+    function saveFlashSale() {
+        // Lấy dữ liệu từ form
+        var productId = document.getElementById("productId").value;
+        var flashSalePrice = document.getElementById("flashSalePrice").value;
+        var flashSaleStartTime = document.getElementById("flashSaleStartTime").value;
+        var flashSaleEndTime = document.getElementById("flashSaleEndTime").value;
+        var isActive = document.getElementById("isActive").checked;
+        $.ajax({
+            url: '/Admin/Product/SaveFlashSale', 
+            type: 'POST',
+            data: {
+                productId: productId,
+                flashSalePrice: flashSalePrice,
+                flashSaleStartTime: flashSaleStartTime,
+                flashSaleEndTime: flashSaleEndTime,
+                isActive: isActive
+            },
+            success: function (response) {
+                // Đóng modal khi lưu thành công
+                $('#flashSaleModal').modal('hide');
+                // Xử lý sau khi lưu thành công (ví dụ: hiển thị thông báo)
+                alert('Flash Sale đã được lưu thành công!');
+            },
+            error: function (xhr, status, error) {
+                // Xử lý lỗi khi lưu không thành công
+                alert('Đã xảy ra lỗi khi lưu Flash Sale. Vui lòng thử lại sau.');
+            }
+        });
+    }
+    function checkFlashSale(productId, element) {
+        $.ajax({
+            url: '/Admin/Product/CheckActiveFlashSale',
+            type: 'GET',
+            data: { productId: productId },
+            success: function (response) {
+                if (response.success) {
+                    if (response.hasActiveFlashSale) {
+                        $(element).html('<div class="alert alert-success">Đang có Flash Sale!</div>');
+                    } else {
+                        $(element).html('<div class="alert alert-info">Không có Flash Sale hiện tại.</div>');
+                    }
+                } else {
+                    $(element).html('<div class="alert alert-danger">' + response.message + '</div>');
+                }
+            },
+            error: function () {
+                $(element).html('<div class="alert alert-danger">Đã xảy ra lỗi khi kiểm tra Flash Sale.</div>');
+            }
+        });
+    }
+
+    $(document).ready(function () {
+        $('#productList tbody tr').each(function () {
+            var productId = $(this).data('product-id');
+            var flashSaleElement = $(this).find('.flash-sale-status');
+
+            if (productId && flashSaleElement.length) {
+                checkFlashSale(productId, flashSaleElement);
+            }
+        });
+    });
+    $(document).ready(function () {
+        $('#productList').DataTable({
+            "language": {
+                "url": "https://cdn.datatables.net/plug-ins/1.11.5/i18n/vi.json"
+            },
+            "paging": true,
+            "ordering": true,
+            "info": true,
+            "pageLength": 6,
+           
+
+        });
+    });
+  
+</script>

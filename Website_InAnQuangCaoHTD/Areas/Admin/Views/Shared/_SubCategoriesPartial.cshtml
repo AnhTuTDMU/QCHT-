@@ -1,0 +1,320 @@
+﻿@model List<Website_InAnQuangCaoHTD.Models.SubCategory>
+<style>
+    table {
+        margin-top: 20px;
+    }
+
+    .table {
+        border-collapse: collapse;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+        .table th {
+            background-color: #f8f9fa;
+            color: #333;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        .table td {
+            vertical-align: middle;
+        }
+
+    .img-thumbnail {
+        width: 100px;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .btn-sm {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .table-hover tbody tr:hover {
+        background-color: #f1f1f1;
+        transition: background-color 0.3s;
+    }
+</style>
+
+<div class="ms-md-auto py-2 py-md-0" style="display: flex; justify-content: end; margin-bottom: 10px">
+    <a href="javascript:void(0);" class="btn btn-success btn-round" data-bs-toggle="modal" data-bs-target="#addSubCategoryModal">Thêm mới</a>
+</div>
+@if (Model != null && Model.Any())
+{
+    <table id="subCategoriList" class="table table-bordered table-hover align-middle text-center">
+        <thead class="thead-light">
+            <tr>
+                <th>Thể Loại</th>
+                <th>Hình ảnh</th>
+                <th style="text-align: right">Thao Tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var subCategory in Model)
+            {
+                <tr>
+                    <td>@subCategory.SubCategoryName</td>
+                    <td>
+                        <img src="~/img/@subCategory.SubCategoryImage" class="img-thumbnail" />
+                    </td>
+                    <td style="text-align: right">
+                        <button class="btn btn-info btn-sm me-2" onclick="viewSubCategoryDetails(@subCategory.SubCategoryID)">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn btn-warning btn-sm me-2" onclick="editSubCategory(@subCategory.SubCategoryID)">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                        <button class="btn btn-danger btn-sm" onclick="deleteSubCategory(@subCategory.SubCategoryID)">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Không có dữ liệu</p>
+}
+<div class="modal fade" id="subCategoryModal" tabindex="-1" aria-labelledby="subCategoryModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="subCategoryModalLabel">Sửa Thể Loại</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Form thêm/sửa sub-category -->
+                <form id="subCategoryForm">
+                    <input type="hidden" id="subCategoryId" name="subCategoryId" />
+                    <div class="mb-3">
+                        <label for="subCategoryName" class="form-label">Tên Thể Loại</label>
+                        <input type="text" class="form-control" id="subCategoryName" name="subCategoryName" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="editsubCategoryImg" class="form-label">Chọn hình ảnh</label>
+                        <input type="file" class="form-control" id="editsubCategoryImg" name="editsubCategoryImg" accept="image/*">
+                        <div class="mt-2">
+                            <span id="editsubCategoryImageFileNameDisplay">Không có tệp nào được chọn</span>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <img id="editCategoryImagePreview" src="#" alt="Image Preview" style="display:none; max-width: 100%; height: auto;" />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Lưu</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal thêm mới SubCategory -->
+<div class="modal fade" id="addSubCategoryModal" tabindex="-1" aria-labelledby="addSubCategoryModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addSubCategoryModalLabel">Thêm Mới Thể Loại</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="addSubCategoryForm">
+                    <div class="mb-3">
+                        <label for="AddsubCategoryName" class="form-label">Tên Thể Loại</label>
+                        <input type="text" class="form-control" id="AddsubCategoryName" name="AddsubCategoryName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="AddsubCategoryImg" class="form-label">Chọn hình ảnh</label>
+                        <input type="file" class="form-control" id="AddsubCategoryImg" name="AddsubCategoryImg" accept="image/*" required>
+                    </div>
+                    <div class="mb-3">
+                        <img id="AddCategoryimagePreview" src="#" alt="Image Preview" style="display:none; max-width: 100%; height: auto;" />
+                    </div>
+                    <input type="hidden" id="categoryId" name="categoryId">
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-primary" onclick="submitSubCategoryForm()">Thêm mới</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function submitSubCategoryForm() {
+        var formData = new FormData();
+
+        // Lấy các giá trị từ form
+        var AddsubCategoryName = $('#AddsubCategoryName').val();
+        var AddsubCategoryImg = $('#AddsubCategoryImg')[0].files[0];
+        var categoryId = $('#categoryId').val();
+
+        // Thêm các giá trị vào formData
+        formData.append('SubCategoryName', AddsubCategoryName);
+        formData.append('SubCategoryImg', AddsubCategoryImg);
+        formData.append('CategoryID', categoryId);
+
+        // Gửi dữ liệu đến server
+        $.ajax({
+            url: '/Admin/SubCategory/AddSubCategory',
+            type: 'POST',
+            data: formData,
+            contentType: false, // Không đặt header `Content-Type`, jQuery sẽ tự động thêm header này
+            processData: false, // Không xử lý dữ liệu, vì chúng ta đang gửi FormData
+            success: function (response) {
+                if (response.success) {
+                    // Xử lý khi thêm thành công
+                    alert('Thêm mới thành công!');
+                    loadSubCategories(categoryId);
+                    $('#addSubCategoryModal').modal('hide');
+                } else {
+                    alert('Có lỗi xảy ra: ' + response.message);
+                }
+            },
+            error: function (xhr, status, error) {
+                console.error('AJAX Error:', status, error);
+                console.error('Response:', xhr.responseText);
+                alert('Có lỗi xảy ra khi gửi dữ liệu.');
+            }
+        });
+    }
+
+
+
+    function editSubCategory(subCategoryId) {
+        $.ajax({
+            url: '@Url.Action("GetSubCategory", "SubCategory", new { area = "Admin" })',
+            type: 'GET',
+            data: { id: subCategoryId },
+            success: function (result) {
+                // Điền dữ liệu vào các trường trong modal
+                $('#subCategoryId').val(result.subCategoryId);
+                $('#subCategoryName').val(result.subCategoryName);
+                
+                if (result.AddsubCategoryImg !== undefined) {
+                    $('#editsubCategoryImageFileNameDisplay').text(result.AddsubCategoryImg);
+                    $('#editCategoryImagePreview').attr('src', '/img/' + result.AddsubCategoryImg).show();
+                }
+                // Hiển thị modal
+                $('#subCategoryModal').modal('show');
+            },
+            error: function (xhr, status, error) {
+                console.error('AJAX Error:', status, error);
+                console.error('Response:', xhr.responseText);
+                alert('Có lỗi xảy ra khi tải dữ liệu.');
+            }
+        });
+    }
+    $("#subCategoryForm").on("submit", function (event) {
+        event.preventDefault();
+        var categoryId = $('#categoryId').val();
+        var formData = new FormData(this);
+        $.ajax({
+            url: '@Url.Action("SaveSubCategory", "SubCategory", new { area = "Admin" })',
+            type: 'POST',
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (response) {
+                if (response.success) {
+                    alert('Cập nhật sản phẩm thành công!');
+                    $('#subCategoryModal').modal('hide');
+
+                    loadSubCategories(categoryId);
+                } else {
+                    alert('Có lỗi xảy ra: ' + response.message);
+                }
+            },
+            error: function (xhr, status, error) {
+                console.error('AJAX Error:', status, error);
+                console.error(xhr.responseText);
+                alert('Có lỗi xảy ra khi gửi dữ liệu.');
+            }
+        });
+    });
+ 
+
+
+    function deleteSubCategory(subCategoryId) {
+        var categoryId = $('#categoryId').val();
+        if (confirm('Bạn có chắc chắn muốn xóa mục này không?')) {
+            $.ajax({
+                url: '@Url.Action("DeleteSubCategory", "SubCategory", new { area = "Admin" })',
+                type: 'POST',
+                data: { id: subCategoryId },
+                success: function () {
+                    loadSubCategories(categoryId);
+                },
+                error: function (xhr, status, error) {
+                    console.error('AJAX Error:', status, error);
+                    console.error('Response:', xhr.responseText);
+                    alert('Có lỗi xảy ra khi xóa dữ liệu.');
+                }
+            });
+        }
+    }
+
+
+    function viewSubCategoryDetails(subCategoryId) {
+        // Ẩn subCategoriesList
+       
+        $('#subCategoriesList').hide();
+       
+        // Gửi yêu cầu AJAX để lấy danh sách sản phẩm theo subCategoryId
+        $.ajax({
+            url: '/Admin/Product/GetProductsBySubCategory',
+            type: 'GET',
+            data: { subCategoryId: subCategoryId },
+            success: function (products) {
+                var productContainer = $('#subCategoriesContainer');
+                productContainer.empty(); // Xóa nội dung cũ
+                productContainer.html(products);
+                $('#subCategoryId').val(subCategoryId);
+            },
+            error: function (xhr, status, error) {
+                console.error('AJAX Error:', status, error);
+                console.error(xhr.responseText);
+                alert('Có lỗi xảy ra khi tải dữ liệu sản phẩm.');
+            }
+        });
+    }
+    $("#AddsubCategoryImg").on("change", function () {
+        var file = this.files[0];
+        if (file) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#AddCategoryimagePreview').attr('src', e.target.result).show();
+            };
+            reader.readAsDataURL(file);
+        } else {
+            $('#AddCategoryimagePreview').hide();
+        }
+    });
+    $("#editsubCategoryImg").on("change", function () {
+        var file = this.files[0];
+        if (file) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#editCategoryImagePreview').attr('src', e.target.result).show();
+            };
+            reader.readAsDataURL(file);
+            $('#editsubCategoryImageFileNameDisplay').text(file.name);
+        } else {
+            $('#editCategoryImagePreview').hide();
+        }
+    });
+    $(document).ready(function () {
+        $('#subCategoriList').DataTable({
+            "language": {
+                "url": "https://cdn.datatables.net/plug-ins/1.11.5/i18n/vi.json"
+            },
+            "paging": true,
+            "ordering": true,
+            "info": true,
+            "pageLength": 6,
+
+
+        });
+    });
+
+</script>
